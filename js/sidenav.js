@@ -1,0 +1,1 @@
+document.getElementById('menu-btn').addEventListener('click', () => document.getElementById('side-nav').classList.toggle('open'));
