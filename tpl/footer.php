@@ -24,8 +24,8 @@
 		</div>
 	</div>
 	<div id="footer-bottom">
-		<p>&copy; 2013-2021 prokatpalatok</p>
-		<p>Разработано Adequacy Studio</p>
+		<p>&copy; 2013-<?php echo date("Y"); ?> prokatpalatok</p>
+		<!--p>Разработано Adequacy Studio</p-->
 	</div>
 </footer>
 

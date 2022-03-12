@@ -25,7 +25,7 @@ if(isset($_POST['recount']) || isset($_POST['receipt'])) {
         redirect_to(url_for('admin/order.php'));
     // при работе с базой передаём id заказа
     } else {
-        if($receipt) {redirect_to(url_for('admin/receipt.php?order_id=' . $order['id']));}
+        if ($receipt) {redirect_to(url_for('admin/receipt.php?order_id=' . $order['id']));}
         else {redirect_to(url_for('admin/order.php?order_id=' . $order['id']));}
     }
 }
