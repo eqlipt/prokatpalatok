@@ -27,7 +27,7 @@ if(isset($inventory_id)) {
 	<meta name="keywords" content="<?php echo $page_keywords; ?>">
 	<meta name="description" content="<?php echo $page_description; ?>">
     <title><?php echo $page_title; ?></title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 	<!-- Any additional CDN or style a page needs -->
 	<?php if(isset($to_include)) {echo $to_include;} ?>	
 	<link rel="stylesheet" type="text/css" href="<?php echo url_for(WWW_CSS . '/main.css'); ?>">

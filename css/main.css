@@ -553,12 +553,12 @@ div.showcase img:active {
 		#breadcrumbs p a {
 			font-size: 12px;
 		}
-	#breadcrumbs img {
+	/* #breadcrumbs img {
 		position: fixed;
 		width: 200px;
 		left: -9999;
 		top: -9999;
-	}
+	} */
 @media(max-width:660px) {
 	#breadcrumbs {
 		display: none;
