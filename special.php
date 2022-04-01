@@ -22,8 +22,8 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/table/'; ?>">Складной стол и 4 табурета</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток: 7 700 ₽</p></li>
-                <li><p>последующие сутки: 1 550 ₽/сут.</p></li>
+                <li><p>первые двое суток: 8 200 ₽</p></li>
+                <li><p>последующие сутки: 1 600 ₽/сут.</p></li>
                 <li><p>залог: 20 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 2 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
@@ -41,8 +41,8 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/prokat-lampy-dlya-palatki/'; ?>">Кемпинговый фонарь</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток: 3 700 ₽</p></li>
-                <li><p>последующие сутки: 750 ₽/сут.</p></li>
+                <li><p>первые двое суток: 4 000 ₽</p></li>
+                <li><p>последующие сутки: 950 ₽/сут.</p></li>
                 <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
@@ -60,8 +60,8 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/prokat-lampy-dlya-palatki/'; ?>">Кемпинговый фонарь</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток:  2 200 ₽</p></li>
-                <li><p>последующие сутки:  400 ₽/сут.</p></li>
+                <li><p>первые двое суток:  2 500 ₽</p></li>
+                <li><p>последующие сутки:  550 ₽/сут.</p></li>
                 <li><p>залог: 8 500 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 850 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
@@ -79,8 +79,8 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/prokat-trenogi-s-kotelkom/'; ?>">Тренога с котелком</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток:  3 900 ₽</p></li>
-                <li><p>последующие сутки:  750 ₽/сут.</p></li>
+                <li><p>первые двое суток:  4 400 ₽</p></li>
+                <li><p>последующие сутки:  1 100 ₽/сут.</p></li>
                 <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
