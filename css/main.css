@@ -1008,6 +1008,12 @@ div.showcase img:active {
 .splide__list {
 	height: auto;
 }
+.splide__slide img {
+	transition: all 0.2s ease-in-out;
+}
+.splide__slide img:hover {
+	transform: scale(0.95);
+}
 
 /* FOOTER */
 footer {
