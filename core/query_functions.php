@@ -150,6 +150,19 @@ function find_all_orders($admin_id) {
 	return $result_set;
 }
 
+function find_current_orders($admin_id) {
+    global $db;
+
+	$sql = "SELECT * FROM orders ";
+	$sql .= "WHERE admin_id='" . db_escape($db, $admin_id) . "' ";
+	$sql .= "AND end_date > '" . date('Y') . "-01-01' ";
+    $sql .= "ORDER BY id DESC";
+
+	$result_set = mysqli_query($db, $sql);
+	confirm_query_result($result_set, $sql);
+	return $result_set;
+}
+
 function find_last_active_order($admin_id) {
     global $db;
     

@@ -1,7 +1,7 @@
 <div id="order-list">
 <?php 
 if(isset($_SESSION['admin_id'])) {
-    $order_list = find_all_orders($_SESSION['admin_id']);?>
+    $order_list = find_current_orders($_SESSION['admin_id']);?>
 
     <!-- список заказов -->
     <form action="process.php" method="post">
