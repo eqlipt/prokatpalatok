@@ -156,6 +156,7 @@ function find_current_orders($admin_id) {
 	$sql = "SELECT * FROM orders ";
 	$sql .= "WHERE admin_id='" . db_escape($db, $admin_id) . "' ";
 	$sql .= "AND end_date > '" . date('Y') . "-01-01' ";
+	$sql .= "OR id >= 22000 ";
     $sql .= "ORDER BY id DESC";
 
 	$result_set = mysqli_query($db, $sql);
