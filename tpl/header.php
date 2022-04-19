@@ -55,7 +55,7 @@ if(isset($inventory_id)) {
 	<div id="slider">
 		<div id="about">
 			<a class="header-link" href="<?php echo WWW_ROOT; ?>" itemprop="url"><span itemprop="name">Прокат палаток</span> и туристического снаряжения в <span itemprop="areaServed">Санкт-Петербург</span>е</a>
-			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_kupchino'; ?>"><span itemprop="location">м. Купчино</span> <span itemprop="telephone">+7 921 989 2966</span></a>
+			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_kupchino'; ?>"><span itemprop="location">м. Купчино</span> <span itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></span></a>
 		</div>
 		<nav id="header-nav" aria-label="header-nav">
 			<ul id="menu-top">
@@ -67,7 +67,7 @@ if(isset($inventory_id)) {
 				<li><a href="https://vk.com/topic-53310491_28269369" target="new" >Отзывы</a></li>
 				<li><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></li>
 			</ul>			
-			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_komendantskiy'; ?>">м. Комендантский проспект +7 911 979 0116</a>
+			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_komendantskiy'; ?>">м. Комендантский проспект <?php echo CONTACTS_PHONE_KOMEND; ?></a>
 		</nav>
 		<a id="quotes-link" href="https://vk.com/topic-53310491_28269369" target="new">
 		<div id="quotes">

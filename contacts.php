@@ -17,10 +17,10 @@ include(TPL_PATH . '/left.php');
         <h1>Контакты</h1>
         <h2 class="branch" id="contacts_kupchino">Прокат палаток в Купчино</h2>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: г. Санкт-Петербург, Витебский пр. 99 корп. 2
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_KUPCHINO; ?>
         </p>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: +7 (921) 989 2966
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KUPCHINO; ?>
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/>
@@ -29,7 +29,7 @@ include(TPL_PATH . '/left.php');
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: prokatpalatok @ inbox.ru
         </p>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: ежедневно - с 9 до 21, суббота - с 9 до 12. Перед визитом звоните.
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: <?php echo CONTACTS_WORKING_HOURS_KUPCHINO; ?>
         </p>
         <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&amp;source=constructor" frameborder="0"></iframe>
 
@@ -57,7 +57,7 @@ include(TPL_PATH . '/left.php');
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: г. Санкт-Петербург, Комендантский пр. 51 корп. 1
         </p>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: +7 (911) 979 0116
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KOMEND; ?>
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/>

@@ -6,11 +6,11 @@
 		<div class="footer-col">
 			<h2>Контактная информация</h2>
 			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><a target="new" href="https://yandex.ru/maps/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&source=constructorLink"><span itemprop="addressLocality">Санкт-Петербург</span>,<br><span itemprop="streetAddress">Витебский пр. 99 корп. 2</span></a></p>
-			<p>+7 921 989 2966</p><br>
+			<p><?php echo CONTACTS_PHONE_KUPCHINO; ?></p><br>
 			<p><a target="new" href="https://yandex.ru/maps/?um=constructor%3A5b3981a2f61cd625a1fa2e7ae5a749a95dc73eb14e8d35e0d7c8d5194d2f7bae&source=constructorLink">Санкт-Петербург,<br>Кудровский проезд 2<br>Гаражный кооператив ПО-11<br>4 ряд секции 36, 37, 38.</a></p>
-			<p>+7 921 992 3634</p><br>
+			<p>+7 (921) 992 3634</p><br>
 			<p><a target="new" href="https://yandex.ru/maps/?um=constructor%3Aec7bde08945c8b772d303db69503610220848afb64416b42bfd63957c246eaa7&source=constructorLink">Санкт-Петербург,<br>Комендантский пр. 51 корп. 1</a></p>
-			<p>+7 911 979 0116</p>
+			<p><?php echo CONTACTS_PHONE_KOMEND; ?></p>
 			<meta itemprop="openingHours" datetime="We-Mo 9:00−21:00"></meta>
 		</div>
 		<div class="footer-col">
