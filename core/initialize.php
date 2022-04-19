@@ -16,6 +16,11 @@ require_once('database.php');
 require_once('query_functions.php');
 require_once('validation_functions.php');
 
+// Price constants
+define("PRICE_DELIVERY_THRESHOLD_CITY", '3 000');
+define("PRICE_DELIVERY_THRESHOLD_SUBURBS", '6 000');
+
+
 $db = db_connect();
 
 ?>

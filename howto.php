@@ -125,7 +125,7 @@ if(isset($_GET['question'])) {
                 <i class="fas fa-angle-up"></i>
             </div>
             <div class="accordion-text">
-                <p>Прокат палаток доставляет снаряжение в Санкт-Петербурге при заказе от 3 000 ₽, в Ленобласти - от 6 000 ₽.</p>
+                <p>Прокат палаток доставляет снаряжение в Санкт-Петербурге при заказе от <?php echo PRICE_DELIVERY_THRESHOLD_CITY; ?> ₽, в Ленобласти - от <?php echo PRICE_DELIVERY_THRESHOLD_SUBURBS; ?> ₽. Вы также можете воспользоваться доставкой удобной вам курьерской службой при условии дистанционной предоплаты заказа и залога.</p>
                 <p><a href="<?php echo (WWW_ROOT . '/delivery.php'); ?>">Стоимость доставки</a></p>
             </div>
         </div>

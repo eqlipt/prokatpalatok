@@ -31,8 +31,8 @@ include(TPL_PATH . '/left.php');
             <p>Доставка за пределами КАД: 500 ₽ + 50 ₽/км**</p>
         </div>
         <br>
-        <p class="sub light-yellow">* Доставка осуществляется при заказе от 3 000 ₽. Сумма варьируется в пределах района.</p>
-        <p class="sub light-yellow">** Доставка осуществляется при заказе от 6 000 ₽</p>
+        <p class="sub light-yellow">* Доставка осуществляется при заказе от <?php echo PRICE_DELIVERY_THRESHOLD_CITY; ?> ₽. Сумма варьируется в пределах района.</p>
+        <p class="sub light-yellow">** Доставка осуществляется при заказе от <?php echo PRICE_DELIVERY_THRESHOLD_SUBURBS; ?> ₽.</p>
     </article>
     <!--article>
         <h1 id="section_novgorod">Стоимость доставки снаряжения в Великом Новгороде и Новгородской области</h1>
