@@ -107,9 +107,9 @@ if(isset($_GET['question'])) {
             </div>
             <div class="accordion-text">
                 <p>В Санкт-Петербурге пункты самовывоза находятся по адресам:<br> 
-                <a target="new" href="https://yandex.ru/maps/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&source=constructorLink">Витебский пр. 99 корп. 2</a>, тел. +7 921 989 2966<br>
-                <a target="new" href="https://yandex.ru/maps/?um=constructor%3A5b3981a2f61cd625a1fa2e7ae5a749a95dc73eb14e8d35e0d7c8d5194d2f7bae&source=constructorLink">Кудровский проезд 2, Гаражный кооператив ПО-11, 4 ряд секции 36, 37, 38.</a>, тел. +7 921 992 3634<br>
-                <a target="new" href="https://yandex.ru/maps/?um=constructor%3Aec7bde08945c8b772d303db69503610220848afb64416b42bfd63957c246eaa7&source=constructorLink">Комендантский пр., д. 51 корп. 1</a>, тел. +7 911 979 0116<br>
+                <a target="new" href="https://yandex.ru/maps/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&source=constructorLink"><?php echo CONTACTS_ADDRESS_STREET_KUPCHINO; ?></a>. тел. <?php echo CONTACTS_PHONE_KUPCHINO; ?><br>
+                <a target="new" href="https://yandex.ru/maps/?um=constructor%3A5b3981a2f61cd625a1fa2e7ae5a749a95dc73eb14e8d35e0d7c8d5194d2f7bae&source=constructorLink"><?php echo CONTACTS_ADDRESS_STREET_KUDROVO; ?></a>. тел. <?php echo CONTACTS_PHONE_KUDROVO; ?><br>
+                <a target="new" href="https://yandex.ru/maps/?um=constructor%3Aec7bde08945c8b772d303db69503610220848afb64416b42bfd63957c246eaa7&source=constructorLink"><?php echo CONTACTS_ADDRESS_STREET_KOMEND; ?></a>. тел. <?php echo CONTACTS_PHONE_KOMEND; ?><br>
                 Перед визитом, пожалуйста, звоните. Либо воспользуйтесь нашей <a href="<?php echo (WWW_ROOT . '/delivery.php'); ?>">доставкой</a>.</p>
             </div>
         </div>
