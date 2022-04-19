@@ -17,7 +17,7 @@ include(TPL_PATH . '/left.php');
         <h1>Контакты</h1>
         <h2 class="branch" id="contacts_kupchino">Прокат палаток в Купчино</h2>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_KUPCHINO; ?>
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_CITY . ', ' . CONTACTS_ADDRESS_STREET_KUPCHINO . '. Перед визитом звоните.'; ?>
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KUPCHINO; ?>
@@ -35,7 +35,7 @@ include(TPL_PATH . '/left.php');
 
         <h2 class="branch" id="contacts_dybenko">Прокат палаток Camp4rest в Кудрово</h2>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: г. Санкт-Петербург, Кудровский проезд 2, гаражный кооператив ПО-11, 4 ряд, секции 36, 37, 38. Сотрудник проката встретит у шлагбаума. Въезд бесплатный.
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_CITY; ?>, Кудровский проезд 2, гаражный кооператив ПО-11, 4 ряд, секции 36, 37, 38. Сотрудник проката встретит у шлагбаума. Въезд бесплатный.
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: +7 (921) 992 3634
@@ -54,7 +54,7 @@ include(TPL_PATH . '/left.php');
 
         <h2 class="branch" id="contacts_komendantskiy">Прокат палаток на Комендантском</h2>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: г. Санкт-Петербург, Комендантский пр. 51 корп. 1
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_CITY; ?>, Комендантский пр. 51 корп. 1
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KOMEND; ?>

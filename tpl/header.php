@@ -54,7 +54,7 @@ if(isset($inventory_id)) {
 	<!-- slider -->	
 	<div id="slider">
 		<div id="about">
-			<a class="header-link" href="<?php echo WWW_ROOT; ?>" itemprop="url"><span itemprop="name">Прокат палаток</span> и туристического снаряжения в <span itemprop="areaServed">Санкт-Петербург</span>е</a>
+			<a class="header-link" href="<?php echo WWW_ROOT; ?>" itemprop="url"><span itemprop="name">Прокат палаток</span> и туристического снаряжения в <span itemprop="areaServed"><?php echo CONTACTS_ADDRESS_CITY; ?></span>е</a>
 			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_kupchino'; ?>"><span itemprop="location">м. Купчино</span> <span itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></span></a>
 		</div>
 		<nav id="header-nav" aria-label="header-nav">
