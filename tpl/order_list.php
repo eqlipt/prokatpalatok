@@ -5,7 +5,7 @@ if(isset($_SESSION['admin_id'])) {
 
     <!-- список заказов -->
     <form action="process.php" method="post">
-        <table style="margin-left: auto;">
+        <table style="margin-left: auto; margin-right: 10px;">
         <?php while($order = mysqli_fetch_assoc($order_list)) { ?>
             <?php $status = find_status_by_status_id($order['status_id']); ?>
             <tr>
