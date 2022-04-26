@@ -1,7 +1,7 @@
 <?php
 
 require_once('../../core/initialize.php'); 
-$inventory_id = '23';
+$inventory_id = '58';
 $page_content_class = "infopage";
 
 include(TPL_PATH . '/header.php');
