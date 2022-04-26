@@ -1,7 +1,7 @@
 <table class="selection">
 
 <?php
-$inventory_set = find_all_inventory_items();
+$inventory_set = find_inventory_items_in_stock();
 while($inventory_item = mysqli_fetch_assoc($inventory_set)) {
 $category = find_category_by_id($inventory_item['category_id']);
 ?>

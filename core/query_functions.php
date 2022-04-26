@@ -13,6 +13,19 @@ function find_all_inventory_items() {
 	return $result;
 }
 
+function find_inventory_items_in_stock() {
+	global $db;
+	
+	$sql = "SELECT * FROM inventory ";
+	$sql .= "WHERE quantity>'0' ";
+	$sql .= "ORDER BY id ASC;";
+	
+	$result = mysqli_query($db, $sql);
+	
+	confirm_query_result($result);
+	return $result;
+}
+
 function find_sidebar_inventory_items() {
 	global $db;
 	
