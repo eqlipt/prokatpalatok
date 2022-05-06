@@ -147,6 +147,19 @@ if(isset($_GET['question'])) {
                 <p>Скидки на снаряжение действуют при аренде на срок от двух суток и не суммируются.</p>
             </div>
         </div>
+        <div class="card text-block padding-block accordion-item">
+            <input type="checkbox" <?php if($question == 'age') {echo '';} else {echo 'checked';} ?>>
+            <div class="accordion-header">
+                <div>
+                    <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/v.png'); ?>"/>
+                    <h2>Возрастные ограничения</h2>
+                </div>
+                <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="accordion-text">
+                <p>Прокат палаток не сдаёт снаряжение в аренду лицам, не достигшим 18 лет.</p>
+            </div>
+        </div>
     </article>
 </section>
 <!-- /center -->
