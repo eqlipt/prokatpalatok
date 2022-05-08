@@ -25,11 +25,5 @@
         </a>
     </div>
 
-    <div class="side-card">
-        <a href="<?php echo WWW_ROOT . '/special.php#diner'; ?>">
-            <img class="box saturate" alt="Походный комплект Фуршет на природе" src="<?php echo url_for(WWW_IMG . '/inventory/set/diner_160.jpg'); ?>"/>
-            <p>Фуршет на природе</p>
-        </a>
-    </div>
 </section>
 <!-- /left -->
