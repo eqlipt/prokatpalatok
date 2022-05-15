@@ -268,9 +268,10 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 К оплате при получении: '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['price'] - $order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.7), 0, '', ' ');} echo ' ₽ + залог.'; ?>
 
 
-<?php echo 'Забрать и вернуть снаряжение можно ежедневно с 9 до 21 (сб. с 9 до 12) по адресу:'; ?>
+<?php echo 'Режим работы: с 9 до 21, суббота - с 9 до 12. Выходные дни: вторник, среда.'; ?>
 
-<?php echo $admin['address'] . $admin['apt_address']; ?>
+
+<?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
 <?php echo 'Перед визитом, пожалуйста, позвоните за час.';?>
 
