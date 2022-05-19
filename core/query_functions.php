@@ -222,13 +222,14 @@ function create_order($admin_id, $order) {
     global $db;
     
 	$sql = "INSERT INTO orders ";
-	$sql .= "(admin_id, inventory, duration, price, deposit, customer_name, customer_tel, customer_address, comment, upfront) ";
+	$sql .= "(admin_id, inventory, duration, price, deposit, customer_returning, customer_name, customer_tel, customer_address, comment, upfront) ";
 	$sql .= "VALUES (";
 	$sql .= "'" . db_escape($db, $admin_id) . "', ";
 	$sql .= "'" . db_escape($db, $order['inventory']) . "', ";
 	$sql .= "'" . db_escape($db, $order['duration']) . "', ";
 	$sql .= "'" . db_escape($db, $order['price']) . "', ";
 	$sql .= "'" . db_escape($db, $order['deposit']) . "', ";
+	$sql .= "'" . db_escape($db, $order['customer_returning']) . "', ";
 	$sql .= "'" . db_escape($db, $order['customer_name']) . "', ";
 	$sql .= "'" . db_escape($db, $order['customer_tel']) . "', ";
 	$sql .= "'" . db_escape($db, $order['customer_address']) . "', ";
@@ -256,6 +257,7 @@ function update_order($order) {
 	$sql .= "duration='" . db_escape($db, $order['duration']) . "', ";
 	$sql .= "price='" . db_escape($db, $order['price']) . "', ";
 	$sql .= "deposit='" . db_escape($db, $order['deposit']) . "', ";
+	$sql .= "customer_returning='" . db_escape($db, $order['customer_returning']) . "', ";
 	$sql .= "customer_name='" . db_escape($db, $order['customer_name']) . "', ";
 	$sql .= "customer_tel='" . db_escape($db, $order['customer_tel']) . "', ";
 	$sql .= "customer_address='" . db_escape($db, $order['customer_address']) . "', ";

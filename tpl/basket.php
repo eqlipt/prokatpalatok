@@ -215,10 +215,13 @@ if(!isset($order)) {
         <p>Предоплата:</p>
     </div>
     <div id="customer-data__right">
-        <input id="name" type="text" name="customer_name" value="<?php echo isset($order['customer_name']) ? h($order['customer_name']) : ''; ?>"><br>
+        <div id="customer-data__right-name">
+            <input id="returning" type="checkbox" name="customer_returning"<?php echo $order['customer_returning'] == 1 ? ' checked' : ''; ?>>
+            <input id="name" type="text" name="customer_name" value="<?php echo isset($order['customer_name']) ? h($order['customer_name']) : ''; ?>">
+        </div>
         <input id="phone" type="text" name="customer_tel" value="<?php echo isset($order['customer_tel']) ? h($order['customer_tel']) : ''; ?>"><br>
         <input id="address" type="text" name="customer_address" value="<?php echo isset($order['customer_address']) ? h($order['customer_address']) : ''; ?>">
-        <input id="address" type="text" name="comment" value="<?php echo isset($order['comment']) ? h($order['comment']) : ''; ?>">
+        <input id="comment" type="text" name="comment" value="<?php echo isset($order['comment']) ? h($order['comment']) : ''; ?>">
         <input id="upfront" type="text" name="upfront" value="<?php echo isset($order['upfront']) ? h($order['upfront']) : ''; ?>">
     </div>
 </div>
@@ -253,10 +256,10 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 ?>
 
 
-<?php echo 'Залог: ' . number_format($order['deposit'], 0, '', ' ') . ' ₽ без документа / ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽ с документом.'; ?>
+<?php echo 'Залог'; if($order['customer_returning'] == 1){echo ' не требуется.';} else {echo ': ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽ с документом / ' .  number_format($order['deposit'], 0, '', ' ') . ' ₽ без документа.';} ?>
 
-<?php echo 'Документы для залога: загранпаспорт, водительские права, военный билет.'; ?>
-
+<?php if($order['customer_returning'] != 1) {echo 'Документы для залога: загранпаспорт, водительские права, военный билет.
+';}?>
 
 <?php echo 'Предоплата для бронирования - '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.3), 0, '', ' ');} echo ' ₽.
 Карта Сбербанк на имя Алексей Дмитриевич К. привязана к номеру ' . $admin['telephone'] . '.'; ?>
@@ -264,7 +267,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
 
 
-<?php echo $order['customer_name'] . ', платёж '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.3), 0, '', ' ');} echo ' ₽ пришёл, бронь подтверждаем.
+<?php echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.3), 0, '', ' ');} echo ' ₽ пришёл, бронь подтверждаем.
 К оплате при получении: '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['price'] - $order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.7), 0, '', ' ');} echo ' ₽ + залог.'; ?>
 
 

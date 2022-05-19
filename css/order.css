@@ -151,6 +151,17 @@ div#order-list {
 #customer-data__right {
     width: 100%;
 }
+    #customer-data__right-name {
+        display: flex;
+        justify-content: space-between;
+    }
+        #customer-data__right-name input#returning {
+            width: 20px;
+            padding: 0;
+        }
+        #customer-data__right-name input#name {
+            width: calc(100% - 30px);
+        }
 
 #customer-data div p,
 #customer-data div input {

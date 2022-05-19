@@ -19,6 +19,7 @@ function update_order_data($data) {
     }
 
     // выделяем данные о заказчике и о предопалте
+    $order['customer_returning'] = isset($data['customer_returning']) ? '1' : '0';
     $order['customer_name'] = $data['customer_name'];
     $order['customer_tel'] = $data['customer_tel'];
     $order['customer_address'] = $data['customer_address'];
@@ -42,6 +43,7 @@ function update_order_data($data) {
 function purge_excessive_post_data($data) {
     unset($data['order_id']);
     unset($data['duration']);
+    unset($data['customer_returning']);
     unset($data['customer_name']);
     unset($data['customer_tel']);
     unset($data['customer_address']);
