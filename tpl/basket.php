@@ -290,13 +290,13 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 } ?>
 
 
-<?php echo $order['customer_name'] . ', В следующий раз можно без залога, напомните, что уже брали у нас.'; ?>
+<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', в' : 'В') .' следующий раз можно без залога, напомните, что уже брали у нас.'; ?>
 
 
 <?php echo 'Буду рад отзыву Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
 
 
-<?php echo $order['customer_name'] . ', благодарим, что воспользовались сервисом prokatpalatok.ru. При следующих арендах залог не требуется.'; ?>
+<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', благодарим' : 'Благодарим') . ', что воспользовались сервисом prokatpalatok.ru. При следующих арендах залог не требуется.'; ?>
 
 
 <?php echo 'Будем рады Вашему отзыву о прокате: Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
