@@ -274,11 +274,11 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
+<?php echo 'Режим работы: с 9 до 21, суббота - с 9 до 12. Выходные дни: вторник, среда.'; ?>
+
 <?php echo 'Перед визитом, пожалуйста, позвоните за час.';?>
 
 <?php echo $admin['telephone'];?>
-
-<?php echo 'Режим работы: с 9 до 21, суббота - с 9 до 12. Выходные дни: вторник, среда.'; ?>
 
 
 <?php if(isset($inventory)) {
