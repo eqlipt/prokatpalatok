@@ -272,14 +272,13 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php echo 'К оплате при получении: '; if( isset( $order['upfront'] ) && $order['upfront'] != '0' ){ echo number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' );} else { echo number_format( ( $order['price'] ), 0, '', ' ' );} echo ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.'; } ?>
 
 
-<?php echo 'Режим работы: с 9 до 21, суббота - с 9 до 12. Выходные дни: вторник, среда.'; ?>
-
-
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
 <?php echo 'Перед визитом, пожалуйста, позвоните за час.';?>
 
 <?php echo $admin['telephone'];?>
+
+<?php echo 'Режим работы: с 9 до 21, суббота - с 9 до 12. Выходные дни: вторник, среда.'; ?>
 
 
 <?php if(isset($inventory)) {
@@ -293,12 +292,10 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 
 <?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', в' : 'В') .' следующий раз можно без залога, напомните, что уже брали у нас.'; ?>
 
-
 <?php echo 'Буду рад отзыву Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
 
 
 <?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', благодарим' : 'Благодарим') . ', что воспользовались сервисом prokatpalatok.ru. При следующих арендах залог не требуется.'; ?>
-
 
 <?php echo 'Будем рады Вашему отзыву о прокате: Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
 </textarea></div>
