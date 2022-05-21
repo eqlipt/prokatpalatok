@@ -261,14 +261,15 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php if($order['customer_returning'] != 1) {echo 'Документы для залога: загранпаспорт, водительские права, военный билет.
 ';}?>
 
-<?php echo 'Предоплата для бронирования - '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.3), 0, '', ' ');} echo ' ₽.
+<?php echo 'Предоплата для бронирования: '; echo number_format(($order['price']*0.3), 0, '', ' '); echo ' ₽
 Карта Сбербанк на имя Алексей Дмитриевич К. привязана к номеру ' . $admin['telephone'] . '.'; ?>
 
 <?php echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
 
 
-<?php echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.3), 0, '', ' ');} echo ' ₽ пришёл, бронь подтверждаем.
-К оплате при получении: '; if(isset($order['upfront']) && $order['upfront'] != '0'){echo number_format(($order['price'] - $order['upfront']), 0, '', ' ');} else{echo number_format(($order['price']*0.7), 0, '', ' ');} echo ' ₽ + залог.'; ?>
+<?php if(isset($order['upfront']) && $order['upfront'] != '0') { echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; echo number_format(($order['upfront']), 0, '', ' '); echo ' ₽ пришёл, бронь подтверждаем.';} ?>
+
+<?php echo 'К оплате при получении: '; if( isset( $order['upfront'] ) && $order['upfront'] != '0' ){ echo number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' );} else { echo number_format( ( $order['price'] ), 0, '', ' ' );} echo ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.'; } ?>
 
 
 <?php echo 'Режим работы: с 9 до 21, суббота - с 9 до 12. Выходные дни: вторник, среда.'; ?>
