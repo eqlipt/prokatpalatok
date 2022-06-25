@@ -47,7 +47,7 @@ include(TPL_PATH . '/left.php');
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: 4restcamp @ gmail.com
         </p>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: ежедневно - с 9 до 21. Перед визитом звоните.
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: ежедневно - с 10 до 19. Перед визитом звоните.
         </p>
         <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5b3981a2f61cd625a1fa2e7ae5a749a95dc73eb14e8d35e0d7c8d5194d2f7bae&amp;source=constructor" frameborder="0"></iframe>
         
