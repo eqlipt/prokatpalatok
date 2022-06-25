@@ -39,9 +39,9 @@ include(TPL_PATH . '/left.php');
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KUDROVO; ?>
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/>
+            <!-- <img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
+            <img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
+            <img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/> -->
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: 4restcamp @ gmail.com
