@@ -43,7 +43,7 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток: 4 000 ₽</p></li>
                 <li><p>последующие сутки: 950 ₽/сут.</p></li>
-                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 22 500 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 2 250 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Палатка автоматической сборки легко и быстро устанавливается и подходит даже для неопытных путешественников. Самонадувающиеся коврики изолируют холод от земли и обеспечивают ровную поверхность для сна. Коврики состёгиваются друг с другом, а два спальника можно объединить в один большой.</p>
