@@ -61,7 +61,7 @@ include(TPL_PATH . '/header.php');
             </ul>
             <ul class="price">
                 <li><p>первые двое суток:  2 300 ₽</p></li>
-                <li><p>последующие сутки:  550 ₽/сут.</p></li>
+                <li><p>последующие сутки:  450 ₽/сут.</p></li>
                 <li><p>залог: 8 500 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 850 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
