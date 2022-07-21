@@ -63,7 +63,7 @@ if(!isset($_GET['order_id']) || !is_numeric($_GET['order_id']) || $_GET['order_i
             </div>
             <div class='row'>
                 <div class='label'>Оплата проката:</div>
-                <div class='underline'><?php echo ($order['upfront'] . ' ₽ (предоплата)') ?? ''; ?></div>
+                <div class='underline'><?php echo $order['upfront'] ? ($order['upfront'] . ' ₽ (предоплата)') : ''; ?></div>
             </div>
             <div class='row'>
                 <div class='label'>Залог:</div>
