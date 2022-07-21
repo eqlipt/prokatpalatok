@@ -242,7 +242,7 @@ if(isset($inventory)) {
         $price = calculate_price($inventory_id, $order['duration']);
         $deposit = calculate_deposit($inventory_id, $quantity);
         $order_item = $inventory_item['name_order'];
-        if($inventory_item['name_order'] === 'Доставка') $order_item .= ' ' . $order['customer_address'];
+        if($inventory_item['name_order'] === 'Доставка' && isset($order['customer_address'])) $order_item .= ' ' . $order['customer_address'];
         $order_item .= ' - ' . $quantity . ' шт: ' . number_format(($price * $quantity), 0, '', ' ') . ' ₽
 ';        
         echo $order_item; 
