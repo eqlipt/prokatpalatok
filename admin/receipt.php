@@ -38,7 +38,7 @@ if(!isset($_GET['order_id']) || !is_numeric($_GET['order_id']) || $_GET['order_i
                         $deposit = calculate_deposit($inventory_id, $quantity);
                         echo
                             '<tr>
-                                <td>' . $inventory_item['name'] . '</td>
+                                <td>' . $inventory_item['name_order'] . '</td>
                                 <td>' . $quantity . '</td>
                                 <td>' . number_format(($price * $quantity), 0, '', ' ') . '</td>
                                 <td>' . number_format(($inventory_item['deposit'] * $quantity), 0, '', ' ') . '</td>
