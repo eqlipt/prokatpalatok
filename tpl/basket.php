@@ -299,7 +299,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php echo 'Буду рад отзыву Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
 
 
-<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', благодарим' : 'Благодарим') . 'за бережное обращение со снаряжением. При следующих арендах залог не требуется.'; ?>
+<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', благодарим' : 'Благодарим') . ' за бережное обращение со снаряжением. При следующих арендах залог не требуется.'; ?>
 
 <?php echo 'Будем рады Вашему отзыву о прокате: Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
 </textarea></div>
