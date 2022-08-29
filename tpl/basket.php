@@ -278,7 +278,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
-<?php echo 'Режим работы: с 9 до 21, суббота - с 7 до 9. Выходные дни: вторник, среда.'; ?>
+<?php echo 'Режим работы: ' . CONTACTS_WORKING_HOURS_KUPCHINO; ?>
 
 <?php echo 'Перед визитом, пожалуйста, позвоните за час.';?>
 
