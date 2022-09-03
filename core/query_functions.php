@@ -218,6 +218,21 @@ function find_order_by_id($order_id) {
 	return $order;
 }
 
+function find_oldest_cancelled_order() {
+	global $db;
+
+	$sql = "SELECT id FROM orders ";
+	$sql .= "WHERE status_id='0' "; // статус 0 означает "отменён"
+	$sql .= "AND start_date >='" . date('Y') . "-00-00' ";
+	$sql .= "ORDER BY id ASC "; // самый старый заказ
+	$sql .= "LIMIT 1";
+
+	$result = mysqli_query($db, $sql);
+	confirm_query_result($result);
+	$order = mysqli_fetch_assoc($result);
+	return $order['id'];
+}
+
 function create_order($admin_id, $order) {
     global $db;
     

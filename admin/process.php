@@ -290,8 +290,12 @@ if(isset($_POST['new'])) {
 
     // если работаем с залогиненным пользователем (следовательно - заказ из базы)
     if(isset($_SESSION['admin_id'])) {
-
-        redirect_to(url_for('admin/order.php'));
+        $cancelled_order_id = find_oldest_cancelled_order();
+        if($cancelled_order_id > 0) {
+            redirect_to(url_for('admin/order.php?order_id=' . $cancelled_order_id));
+        } else {
+            redirect_to(url_for('admin/order.php'));
+        }
     
     // если пользователь не залогинен
     } else {
