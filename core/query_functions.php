@@ -229,8 +229,12 @@ function find_oldest_cancelled_order() {
 
 	$result = mysqli_query($db, $sql);
 	confirm_query_result($result);
-	$order = mysqli_fetch_assoc($result);
-	return $order['id'];
+	if($result->num_rows == 1) {
+		$order = mysqli_fetch_assoc($result);
+		return $order['id'];
+	} else {
+		return 0;
+	}
 }
 
 function create_order($admin_id, $order) {
