@@ -17,7 +17,7 @@ if(!isset($order)) {
 
 <div id="table-actions">
     <!-- шапка таблицы -->
-    <table>
+    <table id="table-products">
         <tr>
             <td colspan="3">
                 <!-- отображение номера и статуса заказа -->
@@ -229,7 +229,7 @@ if(!isset($order)) {
 
     <div id="bottom-part">
         <!-- Календарь -->
-        <input type="hidden" id="dates" name="dates" data-multiple-dates-separator=" - " class="datepicker-here" value="<?php echo $order['start_date'] . ' - ' . $order['end_date']; ?>"/>
+        <input disabled type="hidden" id="dates" name="dates" data-multiple-dates-separator=" - " class="datepicker-here" value="<?php echo $order['start_date'] . ' - ' . $order['end_date']; ?>"/>
 
         <!-- Памятка -->
 <textarea><?php echo 'Заказ №' . $order['id'] . ' в сервисе prokatpalatok.ru
