@@ -190,4 +190,9 @@ function calculate_total_deposit($inventory_items) {
 	return $total_deposit;
 }
 
+// disable input fields in basket if order is closed
+function echo_disabled_if_order_is_closed($status_id) {
+	return (3 <= $status_id && $status_id <= 6 ) ? 'disabled' : '';
+}
+
 ?>

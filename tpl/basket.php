@@ -31,7 +31,7 @@ if(!isset($order)) {
         </tr>
 
     <?php
-    
+
     // выделяем переменные для подсчёта стоимости второго и последующих дней проката
     $day2price = 0;
     $day3price = 0;
@@ -62,7 +62,7 @@ if(!isset($order)) {
             <td class="button-placeholder">
                 <!-- поле действия по удалению товара -->
                 <!-- [remove] => inventory_id -->
-                <button type="submit" class="img-placeholder" name="remove" value="<?php echo $inventory_item['id']; ?>"><img class="button" src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_160.jpg'); ?>"></button>
+                <button type="submit" class="img-placeholder" name="remove" value="<?php echo $inventory_item['id']; ?>" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>><img class="button" src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_160.jpg'); ?>"></button>
             </td>
 
             <td class="name">
@@ -73,19 +73,19 @@ if(!isset($order)) {
             <td class="button">
                 <!-- кнопка уменьшения количества товара -->
                 <!-- minus-button-[inventory_id] -->
-                <button type="button" id="minus-button-<?php echo $inventory_item['id']; ?>">-</button>
+                <button type="button" id="minus-button-<?php echo $inventory_item['id']; ?>" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>-</button>
             </td>
 
             <td>
                 <!-- поле ввода количества товара -->
                 <!-- [inventory_id] => quantity -->
-                <input type="text" id="<?php echo $inventory_item['id']; ?>" name="<?php echo $inventory_item['id']; ?>" value="<?php echo h($quantity); ?>">
+                <input type="text" id="<?php echo $inventory_item['id']; ?>" name="<?php echo $inventory_item['id']; ?>" value="<?php echo h($quantity); ?>" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>
             </td>
 
             <td class="button">
                 <!-- кнопка увеличения количества товара -->
                 <!-- plus-button-[inventory_id] -->
-                <button type="button" id="plus-button-<?php echo $inventory_item['id']; ?>">+</button>
+                <button type="button" id="plus-button-<?php echo $inventory_item['id']; ?>" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>+</button>
             </td>
 
             <td class="main-text">
@@ -117,19 +117,19 @@ if(!isset($order)) {
             <td class="button">
                 <!-- кнопка уменьшения количества дней -->
                 <!-- minus-button-duration -->
-                <button type="button" id="minus-button-duration">-</button>
+                <button type="button" id="minus-button-duration" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>-</button>
             </td>
 
             <td style="height: 20px;">
                 <!-- поле ввода срока проката -->
                 <!-- [duration] => days -->
-                <input id="duration" type="text" name="duration" value="<?php echo h($order['duration']); ?>">
+                <input id="duration" type="text" name="duration" value="<?php echo h($order['duration']); ?>" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>
             </td>
 
             <td class="button">
                 <!-- кнопка увеличения количества дней -->
                 <!-- plus-button-duration -->
-                <button type="button" id="plus-button-duration">+</button>
+                <button type="button" id="plus-button-duration" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>+</button>
             </td>
 
             <!-- общая стоимость -->
@@ -148,11 +148,11 @@ if(!isset($order)) {
     <div class="basket-actions">
         <!-- кнопка пересчёта стоимости коризны (submit всех полей формы с меткой recount) -->
         <!-- [recount] => recount -->
-        <button type="submit" name="recount" value="recount">Пересчитать</button>
+        <button type="submit" name="recount" value="recount" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>Пересчитать</button>
 
         <!-- кнопка вывода квитанции (submit всех полей формы с меткой receipt) -->
         <!-- [receipt] => receipt -->
-        <button type="submit" name="receipt" value="receipt">Квитанция</button>
+        <button type="submit" name="receipt" value="receipt" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>Квитанция</button>
 
         <!-- кнопка повторения заказа (submit всех полей формы с меткой repeat) -->
         <!-- [repeat] => repeat -->
@@ -171,8 +171,9 @@ if(!isset($order)) {
 
         <!-- кнопка отменить заказ (submit всех полей формы с меткой cancel) -->
         <!-- [cancel] => cancel -->
-        <?php echo '<button type="submit" name="cancel" value="cancel">Отменить</button>';?>
-        
+        <?php if($order['status_id'] != 0) {
+        	echo '<button type="submit" name="cancel" value="cancel">Отменить</button>';
+				} ?>
         <!-- кнопка бронь (submit всех полей формы с меткой book) -->
         <!-- [book] => book -->
         <?php if($order['status_id'] == 1) {        
