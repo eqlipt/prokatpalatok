@@ -229,7 +229,7 @@ if(!isset($order)) {
 
     <div id="bottom-part">
         <!-- Календарь -->
-        <input disabled type="hidden" id="dates" name="dates" data-multiple-dates-separator=" - " class="datepicker-here" value="<?php echo $order['start_date'] . ' - ' . $order['end_date']; ?>"/>
+        <input type="hidden" id="dates" name="dates" data-multiple-dates-separator=" - " class="datepicker-here" value="<?php echo $order['start_date'] . ' - ' . $order['end_date']; ?>"/>
 
         <!-- Памятка -->
 <textarea><?php echo 'Заказ №' . $order['id'] . ' в сервисе prokatpalatok.ru
