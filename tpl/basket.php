@@ -148,11 +148,11 @@ if(!isset($order)) {
     <div class="basket-actions">
         <!-- кнопка пересчёта стоимости коризны (submit всех полей формы с меткой recount) -->
         <!-- [recount] => recount -->
-        <button type="submit" name="recount" value="recount" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>Пересчитать</button>
+        <button type="submit" name="recount" value="recount">Пересчитать</button>
 
         <!-- кнопка вывода квитанции (submit всех полей формы с меткой receipt) -->
         <!-- [receipt] => receipt -->
-        <button type="submit" name="receipt" value="receipt" <?php echo echo_disabled_if_order_is_closed($order['status_id']); ?>>Квитанция</button>
+        <button type="submit" name="receipt" value="receipt">Квитанция</button>
 
         <!-- кнопка повторения заказа (submit всех полей формы с меткой repeat) -->
         <!-- [repeat] => repeat -->
