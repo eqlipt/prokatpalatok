@@ -9,8 +9,9 @@ if(!is_post_request()) {
 
 # запрос на пересчёт и запрос на квитанцию
 # квитанция подразумевает пересчёт и редирект на страницу квитанции
-if(isset($_POST['recount']) || isset($_POST['receipt'])) {
 
+if(isset($_POST['recount']) || isset($_POST['receipt'])) {
+	// die(var_dump($_POST));
     // определяем квитанция или просто пересчёт
     $receipt = isset($_POST['receipt']) ?? '';
 
