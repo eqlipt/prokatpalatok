@@ -11,7 +11,7 @@ define("CONTACTS_ADDRESS_STREET_KOMEND", 'Комендантский пр. 51 к
 define("CONTACTS_ADDRESS_STREET_KUDROVO", 'Кудровский проезд 2, Гаражный кооператив ПО-11, 4 ряд, секции: 36, 37, 38');
 define("CONTACTS_PHONE_KUPCHINO", '+7 (921) 989 2966');
 define("CONTACTS_PHONE_KOMEND", '+7 (911) 979 0116');
-define("CONTACTS_PHONE_KUDROVO", '+7 (993) 486 5029');
+define("CONTACTS_PHONE_KUDROVO", '+7 (921) 941 9211');
 
 
 ?>

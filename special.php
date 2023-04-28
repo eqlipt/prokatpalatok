@@ -22,9 +22,9 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/table/'; ?>">Складной стол и 4 табурета</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток: 8 200 ₽</p></li>
+                <li><p>первые двое суток: 8 800 ₽</p></li>
                 <li><p>последующие сутки: 1 600 ₽/сут.</p></li>
-                <li><p>залог: 20 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 2 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 25 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 2 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Двухкомнтатная палатка позволяет комфортно разместиться семье из четырёх человек. В большом центральном тамбуре можно сложить вещи или установить стол с табуретами.</p>
