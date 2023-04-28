@@ -62,7 +62,7 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток:  2 300 ₽</p></li>
                 <li><p>последующие сутки:  450 ₽/сут.</p></li>
-                <li><p>залог: 8 500 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 850 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 10 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Всё необходимое снаряжение для одного человека: компактная палатка, комфортный самонадувающийся коврик и спальник. Фонарик можно подвесить под потолком палатки или установить на полу.</p>
