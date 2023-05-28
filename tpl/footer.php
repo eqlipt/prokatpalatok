@@ -15,11 +15,12 @@
 		</div>
 		<div class="footer-col">
 			<h2>Покупателям</h2>
-			<p><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия аренды</a></p>
-			<p><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></p>
 			<p><a href="https://vk.com/topic-53310491_28269369">Отзывы</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></p>
 		</div>
 	</div>

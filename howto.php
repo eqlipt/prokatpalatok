@@ -21,7 +21,7 @@ if(isset($_GET['question'])) {
 <!-- center -->
 <section id="center">
     <article>
-        <h1>Условия аренды в Прокате палаток</h1>
+        <h1>Условия проката в Прокате палаток</h1>
         <div class="card text-block padding-block accordion-item">
             <input type="checkbox" <?php if($question == 'period') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">

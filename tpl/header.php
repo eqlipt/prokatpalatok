@@ -59,15 +59,12 @@ if(isset($inventory_id)) {
 		</div>
 		<nav id="header-nav" aria-label="header-nav">
 			<ul id="menu-top">
-				<li><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия аренды</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></li>
+				<li><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></li>
+				<li><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Пункты проката</a></li>
 				<li><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></li>
 				<li><a href="https://vk.com/topic-53310491_28269369" target="new" >Отзывы</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></li>
 			</ul>			
-			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_komendantskiy'; ?>">м. Комендантский проспект <?php echo CONTACTS_PHONE_KOMEND; ?></a>
+			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_dybenko'; ?>">Кудрово <?php echo CONTACTS_PHONE_KUDROVO; ?></a>
 		</nav>
 		<a id="quotes-link" href="https://vk.com/topic-53310491_28269369" target="new">
 		<div id="quotes">
