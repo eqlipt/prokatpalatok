@@ -41,7 +41,7 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/prokat-lampy-dlya-palatki/'; ?>">Кемпинговый фонарь</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток: 4 000 ₽</p></li>
+                <li><p>первые двое суток: 3 980 ₽</p></li>
                 <li><p>последующие сутки: 950 ₽/сут.</p></li>
                 <li><p>залог: 20 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 2 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
