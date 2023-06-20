@@ -271,10 +271,17 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 
 <?php // echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
 
-
-<?php if(isset($order['upfront']) && $order['upfront'] != '0') { echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; echo number_format(($order['upfront']), 0, '', ' '); echo ' ₽ пришёл, бронь подтверждаем.';} ?>
-
-<?php echo 'К оплате при получении: '; if( isset( $order['upfront'] ) && $order['upfront'] != '0' ){ echo number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' );} else { echo number_format( ( $order['price'] ), 0, '', ' ' );} echo ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.'; } ?>
+<?php if($order['upfront'] != '0') {
+	echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; echo number_format(($order['upfront']), 0, '', ' '); echo ' ₽ пришёл, бронь подтверждаем.' . "\n";
+	if($order['upfront'] == $order['price']) {
+		echo 'Заказ оплачен полностью.';
+		if( $order['customer_returning'] != 1 ) { echo ' При получении потребуется только оставить залог.'; }
+	}
+	else {
+		echo 'К оплате при получении: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.'; }
+	}
+}
+?>
 
 
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
