@@ -232,7 +232,7 @@ if(!isset($order)) {
         <input type="hidden" id="dates" name="dates" data-multiple-dates-separator=" - " class="datepicker-here" value="<?php echo $order['start_date'] . ' - ' . $order['end_date']; ?>"/>
 
         <!-- Памятка -->
-<textarea><?php echo 'Заказ №' . $order['id'] . ' в сервисе prokatpalatok.ru
+<textarea><?php echo 'Заказ №' . $order['id'] . ' в сервисе prokatpalatok.ru пункт в Купчино
 Даты проката: ' . date('d/m', strtotime($order['start_date'])) . ' - ' . date('d/m', strtotime($order['end_date'])) . ' (' . $order['duration'] . ' сут.)
 ';
 //Если заказ не пустой
@@ -269,7 +269,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php echo 'Предоплата для бронирования: '; echo number_format(round($order['price']*0.3, -2), 0, '', ' '); echo ' ₽
 Карта Сбербанк на имя Алексей Дмитриевич К. привязана к номеру ' . $admin['telephone'] . '.'; ?>
 
-<?php echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
+<?php // echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
 
 
 <?php if(isset($order['upfront']) && $order['upfront'] != '0') { echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; echo number_format(($order['upfront']), 0, '', ' '); echo ' ₽ пришёл, бронь подтверждаем.';} ?>
