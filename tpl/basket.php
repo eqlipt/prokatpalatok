@@ -284,6 +284,9 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 ?>
 
 
+<?php echo 'Принята оплата: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽' . "\n" . 'Принят залог: военный билет + ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽'; ?>
+
+
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
 <?php echo 'Режим работы: ' . CONTACTS_WORKING_HOURS_KUPCHINO; ?>
