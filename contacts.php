@@ -26,7 +26,7 @@ include(TPL_PATH . '/left.php');
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/>
         </p>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: prokatpalatok @ inbox.ru
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: prokatpalatok@inbox.ru
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: <?php echo CONTACTS_WORKING_HOURS_KUPCHINO; ?>
@@ -44,7 +44,7 @@ include(TPL_PATH . '/left.php');
             <img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/> -->
         </p>
         <p class="sub lighter-yellow">
-            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: 4restcamp @ gmail.com
+            <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: 4restcamp@gmail.com
         </p>
         <p class="sub lighter-yellow">
             <img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: ежедневно - с 10 до 19. Перед визитом звоните.
