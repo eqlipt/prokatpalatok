@@ -76,6 +76,9 @@ include(TPL_PATH . '/left.php');
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
+                            <a href="https://formacia.ru/" target="new"><img src="img/logo/partners/part10.jpg"></a>
+                        </li>
+                        <li class="splide__slide">
                             <a href="https://beefzavod.com/" target="new"><img src="img/logo/partners/part9.jpg"></a>
                         </li>
                         <li class="splide__slide">
