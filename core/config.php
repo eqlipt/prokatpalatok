@@ -13,5 +13,8 @@ define("CONTACTS_PHONE_KUPCHINO", '+7 (921) 989 2966');
 define("CONTACTS_PHONE_KOMEND", '+7 (911) 979 0116 (только мессенджеры)');
 define("CONTACTS_PHONE_KUDROVO", '+7 (921) 941 9211');
 
+// Deposit
+define("TOTAL_DEPOSIT_THRESHOLD", 15000);
+
 
 ?>

@@ -187,7 +187,7 @@ function calculate_total_deposit($inventory_items) {
 		// добавляем его стоимость, помноженную на количвество в корзине, в переменную общей стоимости
 		$total_deposit += $quantity * $individual_deposit;
 	}
-	return $total_deposit;
+	return $total_deposit > TOTAL_DEPOSIT_THRESHOLD ? TOTAL_DEPOSIT_THRESHOLD : $total_deposit;
 }
 
 ?>
