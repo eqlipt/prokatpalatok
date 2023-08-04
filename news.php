@@ -39,7 +39,7 @@ include(TPL_PATH . '/left.php');
                 </div>
                 <div class="card sticker">
                     <img src="<?php echo url_for(WWW_IMG . '/buttons/watch.jpg'); ?>"/>
-                    <p>В Прокате палаток нет расчётного часа. Вы можете вернуть снаржение до 21:00, независимо от того, в какое время взяли его в прокат.</p>
+                    <p>В Прокате палаток нет расчётного часа. Вы можете вернуть снаржение до 20:00, независимо от того, в какое время взяли его в прокат.</p>
                 </div>
                 <div class="card sticker">
                     <img src="<?php echo url_for(WWW_IMG . '/buttons/map.jpg'); ?>"/>
