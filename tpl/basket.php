@@ -267,7 +267,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 ';}?>
 
 <?php echo 'Предоплата для бронирования: '; echo number_format(round($order['price']*0.3, -2), 0, '', ' '); echo ' ₽
-Карта Сбербанк на имя Алексей Дмитриевич К. привязана к номеру ' . $admin['telephone'] . '.'; ?>
+Карта Сбербанк на имя Алексей Дмитриевич К. привязана к номеру ' . $admin['telephone']; ?>
 
 <?php // echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
 
@@ -283,10 +283,6 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 }
 ?>
 
-
-<?php echo 'Принята оплата: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽' . "\n" . 'Принят залог: военный билет + ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽'; ?>
-
-
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
 <?php echo 'Режим работы: ' . CONTACTS_WORKING_HOURS_KUPCHINO; ?>
@@ -296,13 +292,15 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php echo $admin['telephone'];?>
 
 
-<?php if(isset($inventory)) {
+<?php echo 'Принята оплата: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽' . "\n" . 'Принят залог: военный билет + ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽'; ?>
+
+<?php /*if(isset($inventory)) {
     echo 'При задержке с возвратом снаряжения просим уведомить нас. Стоимость продления проката составит ';
     if($order['duration'] == 1) {
         echo number_format($day2price, 0, '', ' ') . ' ₽ за вторые сутки и ';
     }
     echo number_format($day3price, 0, '', ' ') . ' ₽ за каждые последующие сутки.';
-} ?>
+} */?>
 
 
 <?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', в' : 'В') .' следующий раз можно без залога, напомните, что уже брали у нас.'; ?>
