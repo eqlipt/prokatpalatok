@@ -283,6 +283,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 }
 ?>
 
+
 <?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
 
 <?php echo 'Режим работы: ' . CONTACTS_WORKING_HOURS_KUPCHINO; ?>
