@@ -293,7 +293,7 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 <?php echo $admin['telephone'];?>
 
 
-<?php echo 'Принята оплата: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽' . "\n" . 'Принят залог: военный билет + ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽'; ?>
+<?php echo 'Принята оплата: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽' . "\n" . 'Принят залог: военный билет / загран паспорт / водительские права + ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽'; ?>
 
 <?php /*if(isset($inventory)) {
     echo 'При задержке с возвратом снаряжения просим уведомить нас. Стоимость продления проката составит ';
