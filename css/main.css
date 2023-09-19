@@ -780,7 +780,7 @@ a.header-link {
     width: 410px;
   }
 }
-@media (min-width: 1770px) {
+/*@media (min-width: 1770px) {
   #content.set {
     max-width: none;
     display: grid;
@@ -791,7 +791,7 @@ a.header-link {
     grid-column-start: 1;
     grid-column-end: 3;
   }
-}
+}*/
 @media (max-width: 645px) {
   .set-item {
     grid-template-columns: 36vw auto;
