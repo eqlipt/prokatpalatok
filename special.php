@@ -34,7 +34,7 @@ include(TPL_PATH . '/header.php');
     <div class="set-item card">
         <img class="box saturate" alt="Комплект Для двоих" src="<?php echo url_for(WWW_IMG . '/inventory/set/for_two.jpg'); ?>">
         <div class="">
-            <h2>"Для двоих" - Комплект для двух человек<a id="for_two"></a></h2>
+            <h2>"Для двоих" - Комплект для 2 человек<a id="for_two"></a></h2>
             <ul>
                 <li><a href="<?php echo WWW_ROOT . '/palatki/q3/'; ?>">Палатка Quechua Easy 3</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/kovriki/forestmat/'; ?>">2 самонадувающихся коврика</a></li>
@@ -53,7 +53,7 @@ include(TPL_PATH . '/header.php');
     <div class="set-item card">
         <img class="box saturate" alt="Комплект Соло" src="<?php echo url_for(WWW_IMG . '/inventory/set/solo.jpg'); ?>">
         <div class="">
-            <h2>"Соло" - Комплект для одного человека<a id="solo"></a></h2>
+            <h2>"Соло" - Комплект для 1 человека<a id="solo"></a></h2>
             <ul>
                 <li><a href="<?php echo WWW_ROOT . '/palatki/prokat-palatki-outventure-dome-2/'; ?>">Палатка Outventure Dome 2</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/kovriki/forestmat/'; ?>">Самонадувающийся коврик</a></li>
