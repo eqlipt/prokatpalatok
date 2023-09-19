@@ -792,7 +792,8 @@ a.header-link {
     grid-column-end: 3;
   }
 }*/
-@media (max-width: 645px) {
+
+/*@media (max-width: 645px) {
   .set-item {
     grid-template-columns: 36vw auto;
   }
@@ -816,7 +817,7 @@ a.header-link {
   .set-item ul.price li p {
     line-height: 20px;
   }
-}
+}*/
 @media (max-width: 520px) {
   .set-item {
     grid-template-areas:
