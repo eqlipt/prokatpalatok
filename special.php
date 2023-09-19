@@ -14,20 +14,21 @@ include(TPL_PATH . '/header.php');
     <div class="set-item card">        
         <img class="box saturate" alt="Комплект Большая семья" src="<?php echo url_for(WWW_IMG . '/inventory/set/big_family.jpg'); ?>">
         <div class="">
-            <h2>"Большая семья" - Комплект для четырёх человек<a id="big_famliy"></a></h2>
+            <h2>"Большая семья" - Комплект для 4-6 человек<a id="big_famliy"></a></h2>
             <ul>
                 <li><a href="<?php echo WWW_ROOT . '/palatki/prokat-6-mestnoi-2-komnatnoi-palatki-helios-bora/'; ?>">Двухкомнатная палатка с тамбуром</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/kovriki/forestmat/'; ?>">4 самонадувающихся коврика</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/spalniki/prokat-spalnika-oasis/'; ?>">4 спальника Oasis +7</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/table/'; ?>">Складной стол и 4 табурета</a></li>
+                <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/prokat-lampy-dlya-palatki/'; ?>">2 кемпинговых фонаря</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток: 8 800 ₽</p></li>
-                <li><p>последующие сутки: 1 600 ₽/сут.</p></li>
-                <li><p>залог: 30 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 3 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>первые двое суток: 8 960 ₽</p></li>
+                <li><p>последующие сутки: 1 620 ₽/сут.</p></li>
+                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
-        <p class="set-description">Двухкомнтатная палатка позволяет комфортно разместиться семье из четырёх человек. В большом центральном тамбуре можно сложить вещи или установить стол с табуретами.</p>
+        <p class="set-description">Двухкомнтатная палатка позволяет комфортно разместиться компании от четырёх до шести человек. В большом центральном тамбуре можно сложить вещи или установить стол с табуретами. В комплект можно добавить необходимое количество ковриков, спальников, кресел и другого снаряжения.</p>
     </div>
 
     <div class="set-item card">
@@ -43,10 +44,10 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток: 3 980 ₽</p></li>
                 <li><p>последующие сутки: 710 ₽/сут.</p></li>
-                <li><p>залог: 20 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 2 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
-        <p class="set-description">Палатка автоматической сборки легко и быстро устанавливается и подходит даже для неопытных путешественников. Самонадувающиеся коврики изолируют холод от земли и обеспечивают ровную поверхность для сна. Коврики состёгиваются друг с другом, а два спальника можно объединить в один большой.</p>
+        <p class="set-description">Палатка автоматической сборки легко и быстро устанавливается и подходит даже для неопытных путешественников. Самонадувающиеся коврики изолируют холод от земли и обеспечивают ровную и в меру мягкую поверхность для сна. Коврики состёгиваются друг с другом, а два спальника можно объединить в один большой. При необходимости можно добавить складные кресла и столик, треногу с котелком и другое походное снаряжение.</p>
     </div>
 
     <div class="set-item card">
@@ -58,14 +59,15 @@ include(TPL_PATH . '/header.php');
                 <li><a href="<?php echo WWW_ROOT . '/kovriki/forestmat/'; ?>">Самонадувающийся коврик</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/spalniki/prokat-spalnika-oasis/'; ?>">Спальник Oasis +7</a></li>
                 <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/prokat-lampy-dlya-palatki/'; ?>">Кемпинговый фонарь</a></li>
+                <li><a href="<?php echo WWW_ROOT . '/poleznie-veshi/vitim100/'; ?>">Рюкзак 100 литров</a></li>
             </ul>
             <ul class="price">
-                <li><p>первые двое суток:  2 300 ₽</p></li>
-                <li><p>последующие сутки:  450 ₽/сут.</p></li>
-                <li><p>залог: 12 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 000 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>первые двое суток:  2 880 ₽</p></li>
+                <li><p>последующие сутки:  510 ₽/сут.</p></li>
+                <li><p>залог: 13 500 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 350 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
-        <p class="set-description">Всё необходимое снаряжение для одного человека: компактная палатка, комфортный самонадувающийся коврик и спальник. Фонарик можно подвесить под потолком палатки или установить на полу.</p>
+        <p class="set-description">Всё самое необходимое для одного человека, упакованное в рюкзак: компактная палатка, комфортный самонадувающийся коврик и спальник. Фонарик можно подвесить под потолком палатки или установить на полу. При необходимости добавим треногу с котелком, складное кресло или сидушку.</p>
     </div>
 
     <!--div class="set-item card">
