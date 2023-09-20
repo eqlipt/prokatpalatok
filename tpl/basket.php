@@ -232,9 +232,11 @@ if(!isset($order)) {
         <input type="hidden" id="dates" name="dates" data-multiple-dates-separator=" - " class="datepicker-here" value="<?php echo $order['start_date'] . ' - ' . $order['end_date']; ?>"/>
 
         <!-- Памятка -->
-<textarea><?php echo 'Заказ №' . $order['id'] . ' в сервисе prokatpalatok.ru пункт в Купчино
-Даты проката: ' . date('d/m', strtotime($order['start_date'])) . ' - ' . date('d/m', strtotime($order['end_date'])) . ' (' . $order['duration'] . ' сут.)
-';
+<textarea><?php echo '🔑 Заказ №' . $order['id'] . ' в сервисе prokatpalatok.ru пункт в Купчино
+
+📆 Даты проката: ' . date('d/m', strtotime($order['start_date'])) . ' - ' . date('d/m', strtotime($order['end_date'])) . ' (' . $order['duration'] . ' сут.)
+
+⛺' . "\r\n";
 //Если заказ не пустой
 if(isset($inventory)) {
     //Перечисляем инвентарь
@@ -250,10 +252,10 @@ if(isset($inventory)) {
 
     }
 }
-echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
+echo  "\r\n" . '💵 Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 
 
-<?php echo 'Стоимость продления проката: ';
+<?php echo '🔄 Стоимость продления проката: ';
     if($order['duration'] == 1) {
         echo number_format($day2price, 0, '', ' ') . ' ₽ за вторые сутки и ';
     }
@@ -261,37 +263,39 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
 ?>
 
 
-<?php echo 'Залог'; if($order['customer_returning'] == 1){echo ' не требуется.';} else {echo ': ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽ с документом / ' .  number_format($order['deposit'], 0, '', ' ') . ' ₽ без документа.';} ?>
+<?php echo '💰 Залог'; if($order['customer_returning'] == 1){echo ' не требуется.';} else {echo ': ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽ с документом / ' .  number_format($order['deposit'], 0, '', ' ') . ' ₽ без документа.';} ?>
 
 <?php if($order['customer_returning'] != 1) {echo 'Документы для залога: загранпаспорт, водительские права, военный билет.
 ';}?>
 
-<?php echo 'Предоплата для бронирования: '; echo number_format(round($order['price']*0.3, -2), 0, '', ' '); echo ' ₽
+<?php echo '💳 Предоплата для бронирования: '; echo number_format(round($order['price']*0.3, -2), 0, '', ' '); echo ' ₽
 Карта Сбербанк на имя Алексей Дмитриевич К. привязана к номеру ' . $admin['telephone']; ?>
 
 <?php // echo 'Номер карты для предоплаты: 4817 7603 3383 8583 на имя Алексей Дмитриевич К.'; ?>
+<?php echo  "\r\n" . '----------------------------------------------------------------------------------------------------' . "\r\n"; ?>
 
 <?php if($order['upfront'] != '0') {
+	echo '💵 ';
 	echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; echo number_format(($order['upfront']), 0, '', ' '); echo ' ₽ пришёл, бронь подтверждаем.' . "\n";
 	if($order['upfront'] == $order['price']) {
 		echo 'Заказ оплачен полностью.';
 		if( $order['customer_returning'] != 1 ) { echo ' При получении потребуется только оставить залог.'; }
 	}
 	else {
-		echo 'К оплате при получении: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.'; }
+		echo 'К оплате при получении: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.' . "\r\n"; }
 	}
 }
 ?>
 
+<?php echo '📍 Адрес: ' . $admin['address'] . $admin['apt_address'] . "\r\n"; ?>
 
-<?php echo 'Адрес: ' . $admin['address'] . $admin['apt_address']; ?>
+<?php echo '🕗 Режим работы: ' . CONTACTS_WORKING_HOURS_KUPCHINO . "\r\n"; ?>
 
-<?php echo 'Режим работы: ' . CONTACTS_WORKING_HOURS_KUPCHINO; ?>
-
-<?php echo 'Перед визитом, пожалуйста, позвоните за час.';?>
+<?php echo '📲 Перед визитом, пожалуйста, позвоните за час.';?>
 
 <?php echo $admin['telephone'];?>
 
+<?php echo  "\r\n" . '----------------------------------------------------------------------------------------------------' . "\r\n"; ?>
 
 <?php echo 'Принята оплата: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽' . "\n" . 'Принят залог: военный билет / загран паспорт / водительские права + ' . number_format(($order['deposit']/10), 0, '', ' ') . ' ₽'; ?>
 
@@ -303,14 +307,10 @@ echo 'Итого: ' . number_format($order['price'], 0, '', ' ') . ' ₽'; ?>
     echo number_format($day3price, 0, '', ' ') . ' ₽ за каждые последующие сутки.';
 } */?>
 
+<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', в' : 'В') .' следующий раз можно без залога, напомните, что уже брали у нас.' . "\r\n"; ?>
+<?php echo 'Буду рад отзыву Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review' . "\r\n";?>
 
-<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', в' : 'В') .' следующий раз можно без залога, напомните, что уже брали у нас.'; ?>
-
-<?php echo 'Буду рад отзыву Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
-
-
-<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', благодарим' : 'Благодарим') . ' за бережное обращение со снаряжением. При следующих арендах залог не требуется.'; ?>
-
+<?php echo (not_empty($order['customer_name']) ? $order['customer_name'] . ', благодарим' : 'Благодарим') . ' за бережное обращение со снаряжением. При следующих арендах залог не требуется.' . "\r\n"; ?>
 <?php echo 'Будем рады Вашему отзыву о прокате: Вконтакте https://vk.com/topic-53310491_28269369 или в Гугле https://g.page/r/CbwB0yi40pLcEBI/review';?>
 </textarea></div>
 </form>
