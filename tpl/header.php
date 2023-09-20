@@ -86,7 +86,7 @@ if(isset($inventory_id)) {
 			<li id="mat"><a href="<?php echo WWW_ROOT . '/kovriki/'; ?>">Коврики</a></li>
 			<li id="shelter"><a href="<?php echo WWW_ROOT . '/shatry-i-tenty/'; ?>">Шатры и тенты</a></li>
 			<li id="other"><a href="<?php echo WWW_ROOT . '/poleznie-veshi/'; ?>">Полезные вещи</a></li>
-			<li id="special"><a href="<?php echo WWW_ROOT . '/special.php'; ?>">Комплекты</a></li>
+			<li id="special"><a href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>">Комплекты</a></li>
 			<li id="camping"><a href="<?php echo WWW_ROOT . '/camping.php'; ?>">Палаточный лагерь</a></li>
 			<li id="contacts"><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></li>
 		</ul>	
