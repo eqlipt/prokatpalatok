@@ -1,6 +1,9 @@
 <?php
 
-require_once('core/initialize.php');
+Header("HTTP/1.1 301 Moved Permanently");
+Header("Location: https://prokatpalatok.ru/pohodnye-komplekty/");
+
+/* require_once('core/initialize.php');
 $page_title = "Походные комплекты: Прокат палаток в Санкт-Петербурге";
 $page_keywords = "походный набор, палатка спальник, палатка спальник коврик прокат, прокат походный комплект";
 $page_description = "Прокат готовых походных комплектов для любой компании. Для семьи, для двоих, для большой компании, для фуршета на природе";
@@ -89,4 +92,4 @@ include(TPL_PATH . '/header.php');
         <p class="set-description">Дополнение к любому комплекту. Шатёр комфортно вмещает стол с табуретами и 4-6 человек. Москитные сетки защищают от насекомых. Походный холодильник с охлаждающим брикетом сохраняет охлаждёнными продукты и напитки. В котелке можно подогреть воду для чая, приготовить уху на костре.</p>
     </div-->
 
-<?php include(TPL_PATH . '/footer.php'); ?>
+<?php include(TPL_PATH . '/footer.php'); */ ?>
