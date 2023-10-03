@@ -55,16 +55,16 @@ if(isset($inventory_id)) {
 	<div id="slider">
 		<div id="about">
 			<a class="header-link" href="<?php echo WWW_ROOT; ?>" itemprop="url"><span itemprop="name">Прокат палаток</span> и туристического снаряжения в <span itemprop="areaServed"><?php echo CONTACTS_ADDRESS_CITY; ?></span>е</a>
-			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_kupchino'; ?>"><span itemprop="location">м. Купчино</span> <span itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></span></a>
+			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts/#contacts_kupchino'; ?>"><span itemprop="location">м. Купчино</span> <span itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></span></a>
 		</div>
 		<nav id="header-nav" aria-label="header-nav">
 			<ul id="menu-top">
 				<li><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Пункты проката</a></li>
+				<li><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Пункты проката</a></li>
 				<li><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></li>
 				<li><a href="https://vk.com/topic-53310491_28269369" target="new" >Отзывы</a></li>
 			</ul>			
-			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts.php#contacts_dybenko'; ?>">Кудрово <?php echo CONTACTS_PHONE_KUDROVO; ?></a>
+			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts/#contacts_dybenko'; ?>">Кудрово <?php echo CONTACTS_PHONE_KUDROVO; ?></a>
 		</nav>
 		<a id="quotes-link" href="https://vk.com/topic-53310491_28269369" target="new">
 		<div id="quotes">
@@ -88,7 +88,7 @@ if(isset($inventory_id)) {
 			<li id="other"><a href="<?php echo WWW_ROOT . '/poleznie-veshi/'; ?>">Полезные вещи</a></li>
 			<li id="special"><a href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>">Комплекты</a></li>
 			<li id="camping"><a href="<?php echo WWW_ROOT . '/camping.php'; ?>">Палаточный лагерь</a></li>
-			<li id="contacts"><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></li>
+			<li id="contacts"><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>
 		</ul>	
 		<div id="menu-btn">
 			<i class="fas fa-bars"></i>
@@ -114,7 +114,7 @@ if(isset($inventory_id)) {
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></li>
 			<li><a class="subheader" target="new" href="https://vk.com/topic-53310491_28269369">Отзывы</a></li>
-			<li><a class="subheader" href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></li>
+			<li><a class="subheader" href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>
 		</ul>
 	</nav>
 	<!-- /side navigation -->

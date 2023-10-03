@@ -21,7 +21,7 @@
 			<p><a href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></p>
-			<p><a href="<?php echo WWW_ROOT . '/contacts.php'; ?>">Контакты</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></p>
 		</div>
 	</div>
 	<div id="footer-bottom">

@@ -1,12 +1,9 @@
 <?php
 
-Header("HTTP/1.1 301 Moved Permanently");
-Header("Location: https://prokatpalatok.ru/contacts/");
-
-/* require_once('core/initialize.php'); 
+require_once('../core/initialize.php'); 
 $page_title = "Контакты: Прокат палаток в Санкт-Петербурге";
-$page_keywords = "прокат палаток телефон, прокат палаток местонахождение, прокат палаток контакты, прокат палаток связаться";
-$page_description = "Контакты Проката палаток в Санкт-Петербурге. Адрес на карте, телефон, электронная почта, время работы";
+$page_keywords = "телефон, местонахождение, контакты, связаться, как найти, на карте, все пункты";
+$page_description = "Пункты Проката палаток в Санкт-Петербурге. Адрес на карте, телефон, электронная почта, время работы";
 $page_breadcrumbs = "Контакты";
 $page_content_class = "infopage";
 include(TPL_PATH . '/header.php');
@@ -75,4 +72,4 @@ include(TPL_PATH . '/left.php');
 <!-- /center -->
 
 <?php include(TPL_PATH . '/right.php'); ?>
-<?php include(TPL_PATH . '/footer.php'); */ ?>
+<?php include(TPL_PATH . '/footer.php'); ?>
