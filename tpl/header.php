@@ -60,9 +60,9 @@ if(isset($inventory_id)) {
 		<nav id="header-nav" aria-label="header-nav">
 			<ul id="menu-top">
 				<li><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Пункты проката</a></li>
 				<li><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></li>
 				<li><a href="https://vk.com/topic-53310491_28269369" target="new" >Отзывы</a></li>
+				<li><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Пункты проката</a></li>
 			</ul>			
 			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts/#contacts_dybenko'; ?>">Кудрово <?php echo CONTACTS_PHONE_KUDROVO; ?></a>
 		</nav>
