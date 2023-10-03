@@ -25,7 +25,7 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток: 8 960 ₽</p></li>
                 <li><p>последующие сутки: 1 620 ₽/сут.</p></li>
-                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Двухкомнтатная палатка позволяет комфортно разместиться компании от четырёх до шести человек. В большом центральном тамбуре можно сложить вещи или установить стол с табуретами. В комплект можно добавить необходимое количество ковриков, спальников, кресел и другого снаряжения.</p>
@@ -44,7 +44,7 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток: 3 980 ₽</p></li>
                 <li><p>последующие сутки: 710 ₽/сут.</p></li>
-                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 15 000 ₽ без <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Палатка автоматической сборки легко и быстро устанавливается и подходит даже для неопытных путешественников. Самонадувающиеся коврики изолируют холод от земли и обеспечивают ровную и в меру мягкую поверхность для сна. Коврики состёгиваются друг с другом, а два спальника можно объединить в один большой. При необходимости можно добавить складные кресла и столик, треногу с котелком и другое походное снаряжение.</p>
@@ -64,7 +64,7 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток:  2 880 ₽</p></li>
                 <li><p>последующие сутки:  510 ₽/сут.</p></li>
-                <li><p>залог: 13 500 ₽ без <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 350 ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 13 500 ₽ без <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документа</a> / 1 350 ₽ с <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Всё самое необходимое снаряжение для одного человека, упакованное в рюкзак: компактная палатка, комфортный самонадувающийся коврик и спальник. Фонарик можно подвесить под потолком палатки или установить на полу. При необходимости добавим треногу с котелком, складное кресло или сидушку.</p>
@@ -83,7 +83,7 @@ include(TPL_PATH . '/header.php');
             <ul class="price">
                 <li><p>первые двое суток:  4 400 ₽</p></li>
                 <li><p>последующие сутки:  1 100 ₽/сут.</p></li>
-                <li><p>залог: 15 000 ₽ без <a href="<?php #echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php #echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p></li>
+                <li><p>залог: 15 000 ₽ без <a href="<?php #echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документа</a> / 1 500 ₽ с <a href="<?php #echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документом</a></p></li>
             </ul>
         </div>
         <p class="set-description">Дополнение к любому комплекту. Шатёр комфортно вмещает стол с табуретами и 4-6 человек. Москитные сетки защищают от насекомых. Походный холодильник с охлаждающим брикетом сохраняет охлаждёнными продукты и напитки. В котелке можно подогреть воду для чая, приготовить уху на костре.</p>

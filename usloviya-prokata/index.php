@@ -1,10 +1,6 @@
 <?php
 
-Header("HTTP/1.1 301 Moved Permanently");
-Header("Location: https://prokatpalatok.ru/usloviya-prokata/");
-
-/* 
-require_once('core/initialize.php'); 
+require_once('../core/initialize.php'); 
 $page_title = "Условия аренды в прокате палаток в Санкт-Петербурге";
 $page_keywords = "правила проката, прокат палаток сутки проката, прокат палаток бронирование, прокат палаток время работы, доставка палатка";
 $page_description = "Условия аренды туристического снаряжения в Прокате палаток. Залог, оплата, бронирование, сутки проката, доставка, скидки";
@@ -146,7 +142,7 @@ if(isset($_GET['question'])) {
             </div>
             <div class="accordion-text">
                 <p>Скидка 10% за каждую неделю проката вплоть до 30% за третью неделю.</p>
-                <!--p>Скидка 10% на прокат <a href="<?php echo (WWW_ROOT . '/special.php'); ?>" target="new">походного комплекта</a>.</p-->
+                <!--p>Скидка 10% на прокат <a href="<?php echo (WWW_ROOT . '/pohodnye-komplekty/'); ?>" target="new">походного комплекта</a>.</p-->
                 <p>Скидка 5% ко дню рождения.</p>
                 <p>Скидки на снаряжение действуют при аренде на срок от двух суток и не суммируются.</p>
             </div>
@@ -169,4 +165,4 @@ if(isset($_GET['question'])) {
 <!-- /center -->
 
 <?php include(TPL_PATH . '/right.php'); ?>
-<?php include(TPL_PATH . '/footer.php'); */ ?>
+<?php include(TPL_PATH . '/footer.php'); ?>

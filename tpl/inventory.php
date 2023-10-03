@@ -74,7 +74,7 @@ if(!isset($inventory_item)) {
                         <p class="bold">залог</p>
                         </td>
                         <td>
-                        <p><?php echo h($inventory_item['deposit']); ?> ₽ без документа / <?php echo h($inventory_item['deposit']*0.1); ?> ₽ с <a href="<?php echo WWW_ROOT . '/howto.php?question=deposit'; ?>">документом</a></p>
+                        <p><?php echo h($inventory_item['deposit']); ?> ₽ без документа / <?php echo h($inventory_item['deposit']*0.1); ?> ₽ с <a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=deposit'; ?>">документом</a></p>
                         </td>
                     </tr>
                 </table>

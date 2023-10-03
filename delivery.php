@@ -8,7 +8,7 @@ require_once('../core/initialize.php');
 $page_title = "Доставка снаряжения: Прокат палаток в Санкт-Петербурге";
 $page_keywords = "прокат палаток доставка, доставка снаряжения спб";
 $page_description = "Прокат палаток: стоимость доставки";
-$page_breadcrumbs = '<a href="' . WWW_ROOT . '/howto.php' . '">Как арендовать</a>' . ' > Доставка';
+$page_breadcrumbs = '<a href="' . WWW_ROOT . '/usloviya-prokata/' . '">Как арендовать</a>' . ' > Доставка';
 $page_content_class = "infopage";
 include(TPL_PATH . '/header.php');
 include(TPL_PATH . '/left.php');

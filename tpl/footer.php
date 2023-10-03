@@ -15,7 +15,7 @@
 		</div>
 		<div class="footer-col">
 			<h2>Клиентам</h2>
-			<p><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/usloviya-prokata/'; ?>">Условия проката</a></p>
 			<p><a href="https://vk.com/topic-53310491_28269369">Отзывы</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/dostavka/'; ?>">Доставка</a></p>

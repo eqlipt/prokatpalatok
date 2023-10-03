@@ -4,7 +4,7 @@ require_once('core/initialize.php');
 $page_title = "Способы оплаты в Прокате палаток";
 $page_keywords = "прокат палаток способы оплаты, прокат палаток реквизиты, прокат как оплатить, прокат карта сбера, прокат скинуть на карту, прокат скидки";
 $page_description = "Прокат палаток: способы оплаты услуг и скидки";
-$page_breadcrumbs = '<a href="' . WWW_ROOT . '/howto.php' . '">Как арендовать</a>' . ' > Оплата и скидки';
+$page_breadcrumbs = '<a href="' . WWW_ROOT . '/usloviya-prokata/' . '">Как арендовать</a>' . ' > Оплата и скидки';
 $page_content_class = "infopage";
 include(TPL_PATH . '/header.php');
 include(TPL_PATH . '/left.php');
