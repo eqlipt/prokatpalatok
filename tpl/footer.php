@@ -14,7 +14,7 @@
 			<meta itemprop="openingHours" datetime="We-Mo 9:00−21:00"></meta>
 		</div>
 		<div class="footer-col">
-			<h2>Покупателям</h2>
+			<h2>Клиентам</h2>
 			<p><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></p>
 			<p><a href="https://vk.com/topic-53310491_28269369">Отзывы</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></p>
