@@ -21,6 +21,7 @@
 			<p><a href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Отдых под ключ</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></p>
 		</div>
 	</div>

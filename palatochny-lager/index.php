@@ -1,10 +1,6 @@
 <?php
 
-Header("HTTP/1.1 301 Moved Permanently");
-Header("Location: https://prokatpalatok.ru/palatochny-lager/");
-
-/*
-require_once('core/initialize.php'); 
+require_once('../core/initialize.php'); 
 $page_title = "Палаточный лагерь: Прокат палаток в Санкт-Петербурге";
 $page_keywords = "палаточный лагерь под ключ, организация палаточного лагеря, установить палаточный лагерь, арендовать палаточный лагерь";
 $page_description = "Организация палаточного лагеря любой сложности под ключ в ленобласти. Оснащение, доставка, установка, демонтаж";
@@ -77,6 +73,20 @@ include(TPL_PATH . '/left.php');
             <input type="checkbox">
             <div class="accordion-header">
                 <div>
+                    <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/map.png'); ?>"/>
+                    <h2>Выбор места</h2>
+                </div>
+                <i class="fas fa-angle-up"></i>
+            </div>
+            <div class="accordion-text">
+                <p>Подберём подходящее место, исходя из размера компании и ваших пожеланий: удалённости от города, наличия озера, размера площадки, удобств поблизости и т.д.</p>
+            </div>
+        </div>
+
+        <div class="text-block card padding-block accordion-item">
+            <input type="checkbox">
+            <div class="accordion-header">
+                <div>
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/delivery.png'); ?>"/>
                     <h2>Доставка и монтаж</h2>
                 </div>
@@ -125,5 +135,5 @@ include(TPL_PATH . '/left.php');
 </script>
 
 <?php include(TPL_PATH . '/right.php'); ?>
-<?php include(TPL_PATH . '/footer.php'); */ ?>
+<?php include(TPL_PATH . '/footer.php'); ?>
 

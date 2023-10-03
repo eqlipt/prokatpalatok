@@ -87,7 +87,7 @@ if(isset($inventory_id)) {
 			<li id="shelter"><a href="<?php echo WWW_ROOT . '/shatry-i-tenty/'; ?>">Шатры и тенты</a></li>
 			<li id="other"><a href="<?php echo WWW_ROOT . '/poleznie-veshi/'; ?>">Полезные вещи</a></li>
 			<li id="special"><a href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>">Комплекты</a></li>
-			<li id="camping"><a href="<?php echo WWW_ROOT . '/camping.php'; ?>">Палаточный лагерь</a></li>
+			<li id="camping"><a href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Палаточный лагерь</a></li>
 			<li id="contacts"><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>
 		</ul>	
 		<div id="menu-btn">
@@ -106,8 +106,8 @@ if(isset($inventory_id)) {
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/kovriki/'; ?>">Коврики</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/shatry-i-tenty/'; ?>">Шатры и тенты</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/poleznie-veshi/'; ?>">Полезные вещи</a></li>
-			<li><a class="submenu" href="<?php echo WWW_ROOT . '/special.php'; ?>">Комплекты</a></li>
-			<li><a class="subheader" href="<?php echo WWW_ROOT . '/camping.php'; ?>">Палаточный лагерь</a></li>
+			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>">Комплекты</a></li>
+			<li><a class="subheader" href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Палаточный лагерь</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия аренды</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></li>
