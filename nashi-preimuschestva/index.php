@@ -1,10 +1,6 @@
 <?php
 
-Header("HTTP/1.1 301 Moved Permanently");
-Header("Location: https://prokatpalatok.ru/nashi-preimuschestva/");
-
-/* 
-require_once('core/initialize.php'); 
+require_once('../core/initialize.php'); 
 $page_title = "Наши преимущества: Прокат палаток в Санкт-Петербурге";
 $page_keywords = "честный прокат, качественный прокат, прокат качественного снаряжения, хорошее снаряжение, хорошая палатка прокат, аренда хорошей палатки, арендовать качественную палатку, качественное снаряжение";
 $page_description = "Конкурентные преимущества Проката палаток: качественное снаряжение, удобная оплата, доставка, скидки, маста для отдыха";
@@ -80,31 +76,31 @@ include(TPL_PATH . '/left.php');
                 <div class="splide__track">
                     <ul class="splide__list">
                         <li class="splide__slide">
-                            <a href="https://formacia.ru/" target="new"><img src="img/logo/partners/part10.jpg"></a>
+                            <a href="https://formacia.ru/" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part10.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://beefzavod.com/" target="new"><img src="img/logo/partners/part9.jpg"></a>
+                            <a href="https://beefzavod.com/" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part9.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://advita.ru/" target="new"><img src="img/logo/partners/part8.jpg"></a>
+                            <a href="https://advita.ru/" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part8.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="http://www.aledo-pro.ru" target="new"><img src="img/logo/partners/part7.jpg"></a>
+                            <a href="http://www.aledo-pro.ru" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part7.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="http://www.loyaltyplant.com" target="new"><img src="img/logo/partners/part3.jpg"></a>
+                            <a href="http://www.loyaltyplant.com" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part3.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="http://www.lenfilm.ru" target="new"><img src="img/logo/partners/part1.jpg"></a>
+                            <a href="http://www.lenfilm.ru" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part1.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://vk.com/club11220199" target="new"><img src="img/logo/partners/part4.jpg"></a>
+                            <a href="https://vk.com/club11220199" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part4.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="http://camp4rest.ru/" target="new"><img src="img/logo/partners/part5.jpg"></a>
+                            <a href="http://camp4rest.ru/" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part5.jpg'); ?>"></a>
                         </li>
                         <li class="splide__slide">
-                            <a href="https://www.lenalpsport.ru" target="new"><img src="img/logo/partners/part6.jpg"></a>
+                            <a href="https://www.lenalpsport.ru" target="new"><img src="<?php echo url_for(WWW_IMG . '/logo/partners/part6.jpg'); ?>"></a>
                         </li>
                     </ul>
                 </div>
@@ -160,4 +156,4 @@ include(TPL_PATH . '/left.php');
     } );
     </script>
 <?php include(TPL_PATH . '/right.php'); ?>
-<?php include(TPL_PATH . '/footer.php'); */ ?>
+<?php include(TPL_PATH . '/footer.php'); ?>

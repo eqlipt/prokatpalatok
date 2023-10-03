@@ -60,7 +60,7 @@ if(isset($inventory_id)) {
 		<nav id="header-nav" aria-label="header-nav">
 			<ul id="menu-top">
 				<li><a href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия проката</a></li>
-				<li><a href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></li>
+				<li><a href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></li>
 				<li><a href="https://vk.com/topic-53310491_28269369" target="new" >Отзывы</a></li>
 				<li><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Пункты проката</a></li>
 			</ul>			
@@ -112,7 +112,7 @@ if(isset($inventory_id)) {
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></li>
-			<li><a class="submenu" href="<?php echo WWW_ROOT . '/news.php'; ?>">Наши преимущества</a></li>
+			<li><a class="submenu" href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></li>
 			<li><a class="subheader" target="new" href="https://vk.com/topic-53310491_28269369">Отзывы</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>
 		</ul>
