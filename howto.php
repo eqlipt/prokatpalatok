@@ -110,14 +110,14 @@ if(isset($_GET['question'])) {
                 <a target="new" href="https://yandex.ru/maps/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&source=constructorLink"><?php echo CONTACTS_ADDRESS_STREET_KUPCHINO; ?></a>. тел. <?php echo CONTACTS_PHONE_KUPCHINO; ?><br>
                 <a target="new" href="https://yandex.ru/maps/?um=constructor%3A5b3981a2f61cd625a1fa2e7ae5a749a95dc73eb14e8d35e0d7c8d5194d2f7bae&source=constructorLink"><?php echo CONTACTS_ADDRESS_STREET_KUDROVO; ?></a>. тел. <?php echo CONTACTS_PHONE_KUDROVO; ?><br>
                 <a target="new" href="https://yandex.ru/maps/?um=constructor%3Aec7bde08945c8b772d303db69503610220848afb64416b42bfd63957c246eaa7&source=constructorLink"><?php echo CONTACTS_ADDRESS_STREET_KOMEND; ?></a>. тел. <?php echo CONTACTS_PHONE_KOMEND; ?><br>
-                Перед визитом, пожалуйста, звоните. Либо воспользуйтесь нашей <a href="<?php echo (WWW_ROOT . '/delivery.php'); ?>">доставкой</a>.</p>
+                Перед визитом, пожалуйста, звоните. Либо воспользуйтесь нашей <a href="<?php echo (WWW_ROOT . '/dostavka/'); ?>">доставкой</a>.</p>
             </div>
         </div>
         <div class="card text-block padding-block accordion-item">
             <input type="checkbox" <?php if($question == 'delivery') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
-                    <a href="<?php echo (WWW_ROOT . '/delivery.php'); ?>">
+                    <a href="<?php echo (WWW_ROOT . '/dostavka/'); ?>">
                         <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/car.png'); ?>"/>
                         <h2>Доставка</h2>
                     </a>
@@ -126,7 +126,7 @@ if(isset($_GET['question'])) {
             </div>
             <div class="accordion-text">
                 <p>Доставка снаряжения по Санкт-Петербургу осуществляется при заказе от <?php echo PRICE_DELIVERY_THRESHOLD_CITY; ?> ₽, по Ленобласти - от <?php echo PRICE_DELIVERY_THRESHOLD_SUBURBS; ?> ₽. Вы также можете заказать доставку от нас удобной вам курьерской службой - мы передадим снаряжение курьеру.</p>
-                <p><a href="<?php echo (WWW_ROOT . '/delivery.php'); ?>">Стоимость доставки</a></p>
+                <p><a href="<?php echo (WWW_ROOT . '/dostavka/'); ?>">Стоимость доставки</a></p>
             </div>
         </div>
         <div class="card text-block padding-block accordion-item">

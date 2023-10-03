@@ -110,7 +110,7 @@ if(isset($inventory_id)) {
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Палаточный лагерь</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/howto.php'; ?>">Условия аренды</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></li>
-			<li><a class="submenu" href="<?php echo WWW_ROOT . '/delivery.php'; ?>">Доставка</a></li>
+			<li><a class="submenu" href="<?php echo WWW_ROOT . '/dostavka/'; ?>">Доставка</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></li>
 			<li><a class="subheader" target="new" href="https://vk.com/topic-53310491_28269369">Отзывы</a></li>

@@ -1,9 +1,5 @@
 <?php
 
-Header("HTTP/1.1 301 Moved Permanently");
-Header("Location: https://prokatpalatok.ru/dostavka/");
-
-/* 
 require_once('../core/initialize.php'); 
 $page_title = "Доставка снаряжения: Прокат палаток в Санкт-Петербурге";
 $page_keywords = "прокат палаток доставка, доставка снаряжения спб";
@@ -42,4 +38,4 @@ include(TPL_PATH . '/left.php');
 <!-- /center -->
 
 <?php include(TPL_PATH . '/right.php'); ?>
-<?php include(TPL_PATH . '/footer.php'); */ ?>
+<?php include(TPL_PATH . '/footer.php'); ?>

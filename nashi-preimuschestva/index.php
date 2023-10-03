@@ -67,7 +67,7 @@ include(TPL_PATH . '/left.php');
                 </div>
                 <div class="card sticker">
                     <img src="<?php echo url_for(WWW_IMG . '/buttons/car.jpg'); ?>"/>
-                    <p>Прокат палаток осуществляет <a href="<?php echo url_for('/delivery.php'); ?>">доставку</a> и монтаж снаряжения в Санкт-Петербурге и Ленобласти.</p>
+                    <p>Прокат палаток осуществляет <a href="<?php echo url_for('/dostavka/'); ?>">доставку</a> и монтаж снаряжения в Санкт-Петербурге и Ленобласти.</p>
                 </div>
             </div>
 
