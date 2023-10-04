@@ -109,9 +109,9 @@ if(isset($inventory_id)) {
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>">Комплекты</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Палаточный лагерь</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/usloviya-prokata/'; ?>">Условия аренды</a></li>
-			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php'; ?>">Оплата</a></li>
+			<li><a class="submenu" href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=payment'; ?>">Оплата</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/dostavka/'; ?>">Доставка</a></li>
-			<li><a class="submenu" href="<?php echo WWW_ROOT . '/pay.php#section_discount'; ?>">Скидки</a></li>
+			<li><a class="submenu" href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=discount'; ?>">Скидки</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></li>
 			<li><a class="subheader" target="new" href="https://vk.com/topic-53310491_28269369">Отзывы</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>

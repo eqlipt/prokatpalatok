@@ -1,5 +1,9 @@
 <?php
 
+Header("HTTP/1.1 301 Moved Permanently");
+Header("Location: https://prokatpalatok.ru/usloviya-prokata/?question=payment");
+
+/*
 require_once('core/initialize.php'); 
 $page_title = "Способы оплаты в Прокате палаток";
 $page_keywords = "прокат палаток способы оплаты, прокат палаток реквизиты, прокат как оплатить, прокат карта сбера, прокат скинуть на карту, прокат скидки";
@@ -55,4 +59,4 @@ include(TPL_PATH . '/left.php');
 <!-- /center -->
 
 <?php include(TPL_PATH . '/right.php'); ?>
-<?php include(TPL_PATH . '/footer.php'); ?>
+<?php include(TPL_PATH . '/footer.php'); */ ?>

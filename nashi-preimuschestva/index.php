@@ -63,7 +63,7 @@ include(TPL_PATH . '/left.php');
                 </div>
                 <div class="card sticker">
                     <img src="<?php echo url_for(WWW_IMG . '/buttons/gift.jpg'); ?>"/>
-                    <p>Прокат палаток дарит скидку 5% к Вашему дню рождения. Узнайте про все <a href="<?php echo url_for('/pay.php'); ?>">скидки</a> в Прокате палаток.</p>
+                    <p>Прокат палаток дарит скидку 5% к Вашему дню рождения. Узнайте про все <a href="<?php echo url_for('/usloviya-prokata/?question=discount'); ?>">скидки</a> в Прокате палаток.</p>
                 </div>
                 <div class="card sticker">
                     <img src="<?php echo url_for(WWW_IMG . '/buttons/car.jpg'); ?>"/>
