@@ -1,10 +1,10 @@
 <?php
 
 require_once('../core/initialize.php'); 
-$page_title = "Условия аренды в прокате палаток в Санкт-Петербурге";
+$page_title = "Условия проката в прокате палаток в Санкт-Петербурге";
 $page_keywords = "правила проката, прокат палаток сутки проката, прокат палаток бронирование, прокат палаток время работы, доставка палатка";
-$page_description = "Условия аренды туристического снаряжения в Прокате палаток. Залог, оплата, бронирование, сутки проката, доставка, скидки";
-$page_breadcrumbs = "Как арендовать";
+$page_description = "Условия проката туристического снаряжения в Прокате палаток. Залог, оплата, бронирование, сутки проката, доставка, скидки";
+$page_breadcrumbs = "Условия проката";
 $page_content_class = "infopage";
 
 include(TPL_PATH . '/header.php');
@@ -85,15 +85,17 @@ if(isset($_GET['question'])) {
             <input type="checkbox" <?php if($question == 'payment') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
-                    <a href="<?php echo (WWW_ROOT . '/pay.php'); ?>">
-                        <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/coin.png'); ?>"/>
-                        <h2>Оплата</h2>
-                    </a>
+										<img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/coin.png'); ?>"/>
+										<h2>Оплата и предоплата</h2>
                 </div>
                 <i class="fas fa-angle-up"></i>
             </div>
             <div class="accordion-text">
                 <p>Оплата производится за весь срок проката при получении снаряжения. Способы оплаты: наличными, перевод на банковскую карту, оплата по счёту (для юридических лиц).</p>
+								<p>Предоплата необходима при бронировании снаряжения более, чем за сутки до проката.</p>
+								<p>Способы оплаты:<br>
+                - наличными<br>
+                - перевод на карту Сбербанка</p>
             </div>
         </div>
         <div class="card text-block padding-block accordion-item">
@@ -117,10 +119,8 @@ if(isset($_GET['question'])) {
             <input type="checkbox" <?php if($question == 'delivery') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
-                    <a href="<?php echo (WWW_ROOT . '/dostavka/'); ?>">
-                        <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/car.png'); ?>"/>
-                        <h2>Доставка</h2>
-                    </a>
+										<img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/car.png'); ?>"/>
+										<h2>Доставка</h2>
                 </div>
                 <i class="fas fa-angle-up"></i>
             </div>
@@ -133,18 +133,15 @@ if(isset($_GET['question'])) {
             <input type="checkbox" <?php if($question == 'discount') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
-                    <a href="<?php echo (WWW_ROOT . '/pay.php'); ?>">
-                        <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/discount.png'); ?>"/>
-                        <h2>Скидки</h2>
-                    </a>
+										<img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/discount.png'); ?>"/>
+										<h2>Скидки</h2>
                 </div>
                 <i class="fas fa-angle-up"></i>
             </div>
             <div class="accordion-text">
-                <p>Скидка 10% за каждую неделю проката вплоть до 30% за третью неделю.</p>
-                <!--p>Скидка 10% на прокат <a href="<?php echo (WWW_ROOT . '/pohodnye-komplekty/'); ?>" target="new">походного комплекта</a>.</p-->
-                <p>Скидка 5% ко дню рождения.</p>
-                <p>Скидки на снаряжение действуют при аренде на срок от двух суток и не суммируются.</p>
+								<p>Скидки на снаряжение действуют при прокате на срок от двух суток и не суммируются. Применяется наибольшая возможная скидка.</p>
+                <p>Скидка 10% за каждую неделю проката вплоть до 30% за третью и последующие недели.</p>
+                <p>Скидка 5% ко дню рождения. Скидка распространяется на любое снаряжение и действует в течение 3 дней до и 3 дней после дня рождения.</p>
             </div>
         </div>
         <div class="card text-block padding-block accordion-item">
