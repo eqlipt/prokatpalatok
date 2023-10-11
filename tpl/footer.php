@@ -24,6 +24,10 @@
 			<p><a href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Отдых под ключ</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></p>
 		</div>
+		<div class="footer-col">
+			<h2>Партнёрам</h2>
+			<p><a href="<?php echo WWW_ROOT . '/partneram/'; ?>">Франшиза</a></p>
+		</div>
 	</div>
 	<div id="footer-bottom">
 		<p>&copy; 2013-<?php echo date("Y"); ?> prokatpalatok</p>
