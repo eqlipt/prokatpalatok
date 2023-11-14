@@ -16,9 +16,14 @@ if(!isset($inventory_item)) {
         <!-- images -->
         <div class="showcase">
             <?php 
-                $inventory_images = unserialize($inventory_item['infopage_images_array']);
+								// $inventory_images = unserialize($inventory_item['infopage_images_array']);
+                $inventory_images = array();
+								$filenames = glob('*.{[jJ][pP][gG],[pP][nN][gG],[gG][iI][fF]}', GLOB_BRACE);
+								foreach($filenames as $filename) {
+									$inventory_images[] = $filename;
+								}
                 foreach($inventory_images as $i=>$inventory_image) {
-                echo '<a href="' . $inventory_image . '.jpg" onclick="return viewer.show(' . $i . ')"><img class="box" alt="' . $inventory_item['infopage_images_alt'] . '" src="' . $inventory_image . '.jpg" itemprop="image"></a>';
+                echo '<a href="' . $inventory_image . '" onclick="return viewer.show(' . $i . ')"><img class="box" alt="' . $inventory_item['infopage_images_alt'] . '" src="' . $inventory_image . '" itemprop="image"></a>';
             } ?>
         </div>
         <!-- /images -->
@@ -165,6 +170,6 @@ if(!isset($inventory_item)) {
     viewer.disableEmailLink();
     viewer.disablePhotoLink();
     <?php foreach($inventory_images as $inventory_image) {
-        echo "viewer.add('" . $inventory_image . ".jpg');";
+        echo "viewer.add('" . $inventory_image . "');";
     } ?>
 </script>
