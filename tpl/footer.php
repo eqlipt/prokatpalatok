@@ -41,8 +41,6 @@
 <script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/sidenav.js'); ?>"></script>
 <!-- slider script -->	
 <script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/slider.js'); ?>"></script>
-<!-- basket script -->	
-<!--script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/basket.js'); ?>"></script-->
 
 </body>
 </html>
