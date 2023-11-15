@@ -204,6 +204,19 @@ div.showcase img:active {
   transform: scale(0.99);
 }
 
+.spinner {
+  background-image: url("../img/spinner.gif");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+div.showcase a.spinner {
+  width: 70px;
+  height: 70px;
+  display: inline-block;
+  background-size: auto 70px;
+}
+
 /* Accordion */
 .accordion-item {
   position: relative;
