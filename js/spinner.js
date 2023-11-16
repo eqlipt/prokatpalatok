@@ -6,6 +6,7 @@ imagePlaceholderArray.forEach((item, id) => {
   imageToAppend.alt = item.dataset.alt;
   imageToAppend.classList.add("box");
   imageToAppend.classList.add("fadeout");
+  imageToAppend.setAttribute("itemprop", "image");
   imageToAppend.addEventListener("load", function () {
     item.classList.remove("spinner");
     imagePlaceholderArray[id].appendChild(imageToAppend);
