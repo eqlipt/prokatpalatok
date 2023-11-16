@@ -119,6 +119,16 @@ img.box {
   box-shadow: 3px 3px 11px var(--dark-grey);
 }
 
+.fadeout {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.fadein {
+  opacity: 1;
+  transition: opacity 1s;
+}
+
 img.button {
   vertical-align: middle;
   width: 32px;
