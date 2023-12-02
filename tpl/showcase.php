@@ -3,7 +3,11 @@
 	while($inventory_item = mysqli_fetch_assoc($inventory_set)) { ?>
 		<a href="<?php echo url_for('/' . $category_item['path'] . '/' . $inventory_item['path'] . '/'); ?>">
 			<div class="inventory-item card">
-			<img alt="<?php echo($inventory_item['inventory_item_img_alt']); ?>" src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_195.jpg'); ?>" />
+				<img 	src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_195.jpg'); ?>" 
+							alt="<?php echo($inventory_item['inventory_item_img_alt']); ?>" 
+							width="195" 
+							height="169" 
+				/>
 				<div>
 					<h2><?php echo($inventory_item['name']); ?></h2>
 					<?php if(isset($inventory_item['brief'])) {; ?>
