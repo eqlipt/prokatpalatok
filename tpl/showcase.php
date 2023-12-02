@@ -3,10 +3,15 @@
 	while($inventory_item = mysqli_fetch_assoc($inventory_set)) { ?>
 		<a href="<?php echo url_for('/' . $category_item['path'] . '/' . $inventory_item['path'] . '/'); ?>">
 			<div class="inventory-item card">
-				<img 	src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_195.jpg'); ?>" 
+				<img src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_450.jpg'); ?>" 
 							alt="<?php echo($inventory_item['inventory_item_img_alt']); ?>" 
-							width="195" 
-							height="169" 
+							sizes="(min-width: 1021px) 195px,
+										 (min-width: 661px) 450px,
+										 (min-width: 511px) 195px,
+										 (min-width: 200px) 450px,
+										 450px"
+							srcset="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_450.jpg'); ?> 450w, 
+											<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_195.jpg'); ?> 195w" 
 				/>
 				<div>
 					<h2><?php echo($inventory_item['name']); ?></h2>
