@@ -19,6 +19,7 @@ if(isset($inventory_id)) {
 //main showcase & infopages (those have their own set of variables)
 ?>
 <!-- prokat palatok web-site -->
+<!DOCTYPE html>
 <html lang='ru'>
 <head>
     <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
