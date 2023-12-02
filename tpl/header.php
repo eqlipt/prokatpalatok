@@ -22,15 +22,20 @@ if(isset($inventory_id)) {
 <!DOCTYPE html>
 <html lang='ru'>
 <head>
-    <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8">
 	<!--Let browser know website is optimized for mobile-->
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 	<meta name="keywords" content="<?php echo $page_keywords; ?>">
 	<meta name="description" content="<?php echo $page_description; ?>">
-    <title><?php echo $page_title; ?></title>
+
+  <title><?php echo $page_title; ?></title>
+	
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+
 	<!-- Any additional CDN or style a page needs -->
 	<?php if(isset($to_include)) {echo $to_include;} ?>	
+
 	<link rel="stylesheet" type="text/css" href="<?php echo url_for(WWW_CSS . '/main.css'); ?>">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo url_for(WWW_IMG . '/favicon.ico'); ?>">
 
