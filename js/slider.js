@@ -1,7 +1,7 @@
 // Rotate images in the top banner section
 const NumberOfImagesToRotate = 45;
-FirstPart = ' url("https://prokatpalatok.ru/img/title/title';
-LastPart = '.jpg")';
+FirstPart = ' url("img/title/title';
+LastPart = '.webp")';
 var r = Math.ceil(Math.random() * NumberOfImagesToRotate);
 var image = FirstPart + r + LastPart;
 document.getElementById("slider").style.background =

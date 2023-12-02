@@ -1054,7 +1054,7 @@ table.price-table td:not(:last-of-type) {
 
 /* FOOTER */
 footer {
-  background: url(../img/title/title8.jpg) center/cover no-repeat;
+  background: url(../img/title/title8.webp) center/cover no-repeat;
 }
 #footer-top {
   background-color: var(--darker-grey);
