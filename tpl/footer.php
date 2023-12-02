@@ -36,11 +36,11 @@
 </footer>
 
 <!-- hide navbar on scroll script-->
-<script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/scroll.js'); ?>"></script>
+<script type="text/javascript" language="JavaScript" defer src="<?php echo url_for(WWW_JS . '/scroll.js'); ?>"></script>
 <!-- sidenavbar script -->
-<script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/sidenav.js'); ?>"></script>
+<script type="text/javascript" language="JavaScript" defer src="<?php echo url_for(WWW_JS . '/sidenav.js'); ?>"></script>
 <!-- slider script -->	
-<script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/slider.js'); ?>"></script>
+<script type="text/javascript" language="JavaScript" defer src="<?php echo url_for(WWW_JS . '/slider.js'); ?>"></script>
 
 </body>
 </html>
