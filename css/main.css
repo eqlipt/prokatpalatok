@@ -625,6 +625,7 @@ a.header-link {
   box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.5);
 }
 .inventory-item img {
+  aspect-ratio: 450 / 391;
   width: 195px;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
