@@ -3,7 +3,7 @@
 <!-- /content -->
 <footer>
 	<div id="footer-top">
-		<div class="footer-col">
+		<div class="footer-col footer-contacts">
 			<h2>Контактная информация</h2>
 			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><a target="new" href="https://yandex.ru/maps/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&source=constructorLink"><span itemprop="addressLocality"><?php echo CONTACTS_ADDRESS_CITY; ?></span>,<br><span itemprop="streetAddress"><?php echo CONTACTS_ADDRESS_STREET_KUPCHINO; ?></span></a></p>
 			<p><?php echo CONTACTS_PHONE_KUPCHINO; ?></p><br>
@@ -13,7 +13,7 @@
 			<p><?php echo CONTACTS_PHONE_KOMEND; ?></p>
 			<meta itemprop="openingHours" datetime="We-Mo 9:00−21:00"></meta>
 		</div>
-		<div class="footer-col">
+		<div class="footer-col footer-menu">
 			<h2>Клиентам</h2>
 			<p><a href="<?php echo WWW_ROOT . '/usloviya-prokata/'; ?>">Условия проката</a></p>
 			<p><a href="https://vk.com/topic-53310491_28269369">Отзывы</a></p>
@@ -24,7 +24,7 @@
 			<p><a href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Отдых под ключ</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></p>
 		</div>
-		<div class="footer-col">
+		<div class="footer-col footer-menu">
 			<h2>Партнёрам</h2>
 			<p><a href="<?php echo WWW_ROOT . '/partneram/'; ?>">Франшиза</a></p>
 		</div>

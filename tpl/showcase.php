@@ -10,8 +10,8 @@
 										 (min-width: 511px) 195px,
 										 (min-width: 200px) 450px,
 										 450px"
-							srcset="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_450.jpg'); ?> 450w, 
-											<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_195.jpg'); ?> 195w" 
+							srcset="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_450.webp'); ?> 450w, 
+											<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_195.webp'); ?> 195w" 
 				/>
 				<div>
 					<h2><?php echo($inventory_item['name']); ?></h2>
