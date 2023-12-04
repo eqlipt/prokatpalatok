@@ -6,6 +6,8 @@ $page_keywords = "походный набор, палатка спальник, 
 $page_description = "Прокат готовых походных комплектов для любой компании. Для семьи, для двоих, для большой компании, для фуршета на природе";
 $page_breadcrumbs = "Походные комплекты";
 $page_content_class = "set";
+$main_css_url = url_for(WWW_CSS . '/set.css');
+$to_include = '<link rel="stylesheet" type="text/css" href="' . $main_css_url . '">';
 include(TPL_PATH . '/header.php');
 
 ?>

@@ -37,7 +37,6 @@ if(isset($inventory_id)) {
 	<?php if(isset($to_include)) {echo $to_include;} ?>	
 
 	<link rel="stylesheet" type="text/css" href="<?php echo url_for(WWW_CSS . '/main.css'); ?>">
-	<link rel="stylesheet" type="text/css" href="<?php echo url_for(WWW_CSS . '/fas.css'); ?>">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo url_for(WWW_IMG . '/favicon.ico'); ?>">
 
 	<!-- Yandex.Metrika counter -->
