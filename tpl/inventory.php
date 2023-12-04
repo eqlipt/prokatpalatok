@@ -6,6 +6,8 @@ if(!isset($inventory_item)) {
     $inventory_item = find_inventory_by_id($inventory_id='1');
 }
 
+$up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
+
 ?>
 
 <!-- center -->
@@ -35,7 +37,7 @@ if(!isset($inventory_item)) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/coin.png'); ?>"/>
                     <h2>Стоимость проката</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img>
             </div>
             <div class="accordion-text">
                 <table class="price-table" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
@@ -94,7 +96,7 @@ if(!isset($inventory_item)) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/camp.png'); ?>"/>
                     <h2>Описание</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img>
             </div>
             <div class="accordion-text" itemprop="description">
                 <?php echo $inventory_item['description']; ?>
@@ -110,7 +112,7 @@ if(!isset($inventory_item)) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/repair.png'); ?>"/>
                     <h2>Характеристики</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img>
             </div>
             <div class="accordion-text">
                 <?php echo $inventory_item['technical']; ?>
@@ -128,7 +130,7 @@ if(!isset($inventory_item)) {
                     <div>
                         <h2>' . h($video['title']) . '</h2>
                     </div>
-                    <i class="fas fa-angle-up"></i>
+                    <img src=' . $up_arrow_url . '></img>
                 </div>
                 <div class="accordion-text">
                     <iframe width="100%" src="' . $video['url'] . '" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -147,9 +149,7 @@ if(!isset($inventory_item)) {
                 <div class="accordion-header">
                     <div>
                         <h2>' . $article['title'] . '</h2>
-                    </div>
-                    <i class="fas fa-angle-up"></i>
-                </div>
+                    </div>' . $up_arrow_url . '</div>
                 <div class="accordion-text">' . 
                     $article['text'] . '
                 </div>

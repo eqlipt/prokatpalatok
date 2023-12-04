@@ -6,6 +6,7 @@ $page_keywords = "правила проката, прокат палаток с�
 $page_description = "Условия проката туристического снаряжения в Прокате палаток. Залог, оплата, бронирование, сутки проката, доставка, скидки";
 $page_breadcrumbs = "Условия проката";
 $page_content_class = "infopage";
+$up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
 
 include(TPL_PATH . '/header.php');
 include(TPL_PATH . '/left.php');
@@ -29,7 +30,7 @@ if(isset($_GET['question'])) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/stopwatch.png'); ?>"/>
                     <h2>Сутки проката</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img>
             </div>
             <div class="accordion-text">
                 <p>Сутки проката длятся c 8:00 дня проката до 20:00 <b>следующего</b> дня.</p>
@@ -44,7 +45,7 @@ if(isset($_GET['question'])) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/gem.png'); ?>"/>
                     <h2>Залог</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>Предусмотрено два варианта залога:<br>
@@ -60,7 +61,7 @@ if(isset($_GET['question'])) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/lock.png'); ?>"/>
                     <h2>Бронирование</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>Для бронирования снаряжения более чем за сутки до проката необходима предоплата в размере 30% от стоимости проката. При отказе от проката менее, чем за 3 дня до даты проката, предоплата не возвращается, но всегда может быть использована для проката в будущем. В случае отказа за 3 дня и более предоплата возвращается в полном размере.</p>
@@ -74,7 +75,7 @@ if(isset($_GET['question'])) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/repair.png'); ?>"/>
                     <h2>Повреждения</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>Если вы обнаружили повреждения или недочёты на снаряжении, сделайте фото снимок или видео и отправьте нам в любой мессенджер. Это исключит претензии в Ваш адрес при возврате.</p>
@@ -88,7 +89,7 @@ if(isset($_GET['question'])) {
 										<img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/coin.png'); ?>"/>
 										<h2>Оплата и предоплата</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>Оплата производится за весь срок проката при получении снаряжения.</p>
@@ -106,7 +107,7 @@ if(isset($_GET['question'])) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/place.png'); ?>"/>
                     <h2>Самовывоз</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>В Санкт-Петербурге пункты самовывоза находятся по адресам:<br> 
@@ -123,7 +124,7 @@ if(isset($_GET['question'])) {
 										<img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/car.png'); ?>"/>
 										<h2>Доставка</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>Доставка снаряжения по Санкт-Петербургу осуществляется при заказе от <?php echo PRICE_DELIVERY_THRESHOLD_CITY; ?> ₽, по Ленобласти - от <?php echo PRICE_DELIVERY_THRESHOLD_SUBURBS; ?> ₽. Вы также можете заказать доставку от нас удобной вам курьерской службой - мы передадим снаряжение курьеру.</p>
@@ -137,7 +138,7 @@ if(isset($_GET['question'])) {
 										<img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/discount.png'); ?>"/>
 										<h2>Скидки</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
 								<p>Скидки на снаряжение действуют при прокате на срок от двух суток и не суммируются. Применяется наибольшая возможная скидка.</p>
@@ -152,7 +153,7 @@ if(isset($_GET['question'])) {
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/v.png'); ?>"/>
                     <h2>Возрастные ограничения</h2>
                 </div>
-                <i class="fas fa-angle-up"></i>
+                <img src="<?php echo $up_arrow_url; ?>"></img></i>
             </div>
             <div class="accordion-text">
                 <p>Прокат палаток не сдаёт снаряжение в прокат лицам, не достигшим 18 лет.</p>

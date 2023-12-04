@@ -31,12 +31,13 @@ if(isset($inventory_id)) {
 
   <title><?php echo $page_title; ?></title>
 	
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+	<!-- <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"> -->
 
 	<!-- Any additional CDN or style a page needs -->
 	<?php if(isset($to_include)) {echo $to_include;} ?>	
 
 	<link rel="stylesheet" type="text/css" href="<?php echo url_for(WWW_CSS . '/main.css'); ?>">
+	<link rel="stylesheet" type="text/css" href="<?php echo url_for(WWW_CSS . '/fas.css'); ?>">
 	<link rel="shortcut icon" type="image/x-icon" href="<?php echo url_for(WWW_IMG . '/favicon.ico'); ?>">
 
 	<!-- Yandex.Metrika counter -->
@@ -97,7 +98,8 @@ if(isset($inventory_id)) {
 			<li id="contacts"><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>
 		</ul>	
 		<div id="menu-btn">
-			<i class="fas fa-bars"></i>
+			<!-- <i class="fas fa-bars"></i> -->
+			<img src="<?php echo url_for(WWW_IMG . '/bars.svg'); ?>"></img>
 		</div>
 	</nav>
 	<!-- /main navigation -->
