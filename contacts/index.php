@@ -6,6 +6,11 @@ $page_keywords = "телефон, местонахождение, контакт
 $page_description = "Пункты Проката палаток в Санкт-Петербурге. Адрес на карте, телефон, электронная почта, время работы";
 $page_breadcrumbs = "Контакты";
 $page_content_class = "infopage";
+
+// css
+$aux_css_url = url_for(WWW_CSS . '/infopage.css');
+$to_include = '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
+
 include(TPL_PATH . '/header.php');
 include(TPL_PATH . '/left.php');
 

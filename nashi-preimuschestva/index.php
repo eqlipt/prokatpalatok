@@ -8,8 +8,12 @@ $page_breadcrumbs = "Наши преимущества";
 $page_content_class = "infopage";
 $to_include = '<!-- Splide script & stylesheet -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css">
-<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
-<style>
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>';
+
+// css
+$aux_css_url = url_for(WWW_CSS . '/infopage.css');
+$to_include .= '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
+$to_include .= '<style>
 .splide__arrow--prev {
     left: -2.5em;
 }

@@ -7,6 +7,10 @@ $page_description = "Палатки, спальники, коврики, пен�
 $page_breadcrumbs = "Снаряжение";
 $page_content_class = "inventory";
 
+// css
+$aux_css_url = url_for(WWW_CSS . '/inventory.css');
+$to_include = '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
+
 include(TPL_PATH . '/header.php');
 
 //showcase has to be rendered for each category

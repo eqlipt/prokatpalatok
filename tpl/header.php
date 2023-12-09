@@ -1,19 +1,31 @@
 <?php
-//check what kind of page will be rendered and prepare variables
-//inventory infopage
+/* check what kind of page will be rendered and prepare variables */
+// individual inventory page
 if(isset($inventory_id)) {
 	$inventory_item = find_inventory_by_id($inventory_id);
 	$category_item = find_category_by_id($inventory_item['category_id']);
+
+	// seo
 	$page_keywords = $inventory_item['page_keywords'];
 	$page_description = $inventory_item['page_description'];
 	$page_title = $inventory_item['page_title'];
 
-//category showcase
+	// css
+	$aux_css_url = url_for(WWW_CSS . '/infopage.css');
+	$to_include = '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
+
+// category page
 } elseif(isset($category_id)) {
 	$category_item = find_category_by_id($category_id);
+
+	// seo
 	$page_keywords = $category_item['page_keywords'];
 	$page_description = $category_item['page_description'];
 	$page_title = $category_item['page_title'];
+
+	// css
+	$aux_css_url = url_for(WWW_CSS . '/inventory.css');
+	$to_include = '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
 }
 
 //main showcase & infopages (those have their own set of variables)

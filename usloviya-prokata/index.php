@@ -6,6 +6,11 @@ $page_keywords = "правила проката, прокат палаток с�
 $page_description = "Условия проката туристического снаряжения в Прокате палаток. Залог, оплата, бронирование, сутки проката, доставка, скидки";
 $page_breadcrumbs = "Условия проката";
 $page_content_class = "infopage";
+
+// css
+$aux_css_url = url_for(WWW_CSS . '/infopage.css');
+$to_include = '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
+
 $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
 
 include(TPL_PATH . '/header.php');

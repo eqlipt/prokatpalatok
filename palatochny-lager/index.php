@@ -8,6 +8,10 @@ $page_breadcrumbs = "Палаточный лагерь";
 $page_content_class = "infopage";
 $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
 
+// css
+$aux_css_url = url_for(WWW_CSS . '/infopage.css');
+$to_include = '<link rel="stylesheet" type="text/css" href="' . $aux_css_url . '">';
+
 include(TPL_PATH . '/header.php');
 include(TPL_PATH . '/left.php');
 
