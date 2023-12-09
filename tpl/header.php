@@ -110,7 +110,7 @@ if(isset($inventory_id)) {
 		</ul>	
 		<div id="menu-btn">
 			<!-- <i class="fas fa-bars"></i> -->
-			<img width="46" height="46" src="<?php echo url_for(WWW_IMG . '/bars.svg'); ?>"></img>
+			<img width="46" height="46" alt="burger svg" src="<?php echo url_for(WWW_IMG . '/bars.svg'); ?>"></img>
 		</div>
 	</nav>
 	<!-- /main navigation -->
