@@ -69,6 +69,7 @@ if(isset($inventory_id)) {
 
 <body itemscope itemtype="https://schema.org/Organization">
 <header>
+	<div id="overlay" class="overlay"></div>
 	<!-- slider -->	
 	<div id="slider">
 		<div id="about">
