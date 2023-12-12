@@ -16,11 +16,13 @@ $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
 include(TPL_PATH . '/header.php');
 include(TPL_PATH . '/left.php');
 
-if(isset($_GET['question'])) {
-    $question = $_GET['question'];
-} else {
-    $question = '';
-}
+// if(isset($_GET['question'])) {
+//     $question = $_GET['question'];
+// } else {
+//     $question = '';
+// }
+
+$question = $_GET['question'] ?? '';
 
 ?>
 
@@ -87,7 +89,7 @@ if(isset($_GET['question'])) {
                 <p>Если вы повредили снаряжение, просим сообщить об этом при возврате. Если повреждение незначительное, ремонт будет произведён за наш счёт. В случае значительного ущерба снаряжению мы рассчитываем на вашу порядочность и надеемся на возмещение стоимости ремонта или замены снаряжения. В случае сокрытия ущерба или отказа от его возмещения Прокат палаток оставляет за собой право обратиться в суд.</p>
             </div>
         </div>
-        <div class="card text-block padding-block accordion-item">
+        <div id="section_payment" class="card text-block padding-block accordion-item">
             <input type="checkbox" <?php if($question == 'payment') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
@@ -136,7 +138,7 @@ if(isset($_GET['question'])) {
                 <p><a href="<?php echo (WWW_ROOT . '/dostavka/'); ?>">Стоимость доставки</a></p>
             </div>
         </div>
-        <div class="card text-block padding-block accordion-item">
+        <div id="section_discount" class="card text-block padding-block accordion-item">
             <input type="checkbox" <?php if($question == 'discount') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
