@@ -121,12 +121,12 @@ img.box {
 
 .fadeout {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.4s;
 }
 
 .fadein {
   opacity: 1;
-  transition: opacity 1s;
+  transition: opacity 0.4s;
 }
 
 img.button {

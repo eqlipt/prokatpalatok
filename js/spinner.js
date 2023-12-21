@@ -8,10 +8,10 @@ imagePlaceholderArray.forEach((item, id) => {
   imageToAppend.classList.add("fadeout");
   imageToAppend.setAttribute("itemprop", "image");
   imageToAppend.addEventListener("load", function () {
-    item.classList.remove("spinner");
     imagePlaceholderArray[id].appendChild(imageToAppend);
     setTimeout(function () {
       imageToAppend.classList.add("fadein");
-    }, 250);
+      item.classList.remove("spinner");
+    }, 150);
   });
 });
