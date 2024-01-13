@@ -1,8 +1,8 @@
 <h1><?php echo($category_item['name']); ?></h1>
 	<?php $inventory_set = find_inventory_by_category($category_item['id']);
 	while($inventory_item = mysqli_fetch_assoc($inventory_set)) { ?>
-		<a href="<?php echo url_for('/' . $category_item['path'] . '/' . $inventory_item['path'] . '/'); ?>">
-			<div itemscope itemtype="http://schema.org/Offer" class="inventory-item card">
+		<a href="<?php echo url_for('/' . $category_item['path'] . '/' . $inventory_item['path'] . '/'); ?>" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog" itemref="<?php echo $category_item['type']; ?>">
+			<div itemprop="itemListElement" itemscope itemtype="http://schema.org/Offer" class="inventory-item card">
 			<link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
 				<img src="<?php echo url_for(WWW_IMG . '/inventory/' . $inventory_item['inventory_item_img_path'] . '_450.jpg'); ?>" 
 							alt="<?php echo($inventory_item['inventory_item_img_alt']); ?>" 
