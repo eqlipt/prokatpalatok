@@ -90,7 +90,7 @@ if(isset($inventory_id)) {
 		<a id="quotes-link" href="https://vk.com/topic-53310491_28269369" target="new">
 		<div id="quotes">
 			<!-- <p><script type="text/javascript" language="JavaScript" src="<?php //echo url_for(WWW_JS . '/quotes.js'); ?>"></script></p> -->
-			<p><?php echo $result['text']; ?></p>
+			<p><?php echo $result['text']; ?><br><?php echo $result['user'] == 'DELETED' ? '' : $result['user'] . ', '; ?> <?php echo $result['date']; ?></p>
 		</div>
 		</a>
 	</div>
