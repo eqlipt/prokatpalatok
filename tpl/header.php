@@ -1,4 +1,5 @@
 <?php
+require_once(PROJECT_PATH . '/test.php');
 /* check what kind of page will be rendered and prepare variables */
 // individual inventory page
 if(isset($inventory_id)) {
@@ -67,14 +68,15 @@ if(isset($inventory_id)) {
 	<!-- /Yandex.Metrika counter -->
 </head>
 
-<body itemscope itemtype="https://schema.org/Organization">
-<header>
+<body itemscope itemtype="https://schema.org/Service">
+	<meta itemprop="serviceType" content="Прокат туристического снаряжения" />
+	<header>
 	<div id="overlay" class="overlay"></div>
 	<!-- slider -->	
 	<div id="slider">
-		<div id="about">
+		<div id="about" itemscope itemtype="https://schema.org/Organization">
 			<a class="header-link" href="<?php echo WWW_ROOT; ?>" itemprop="url"><span itemprop="name">Прокат палаток</span> и туристического снаряжения в <span itemprop="areaServed"><?php echo CONTACTS_ADDRESS_CITY; ?></span>е</a>
-			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts/#contacts_kupchino'; ?>"><span itemprop="location">м. Купчино</span> <span itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></span></a>
+			<a class="header-link contacts" href="<?php echo WWW_ROOT . '/contacts/#contacts_kupchino'; ?>"><span>м. Купчино</span> <span itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></span></a>
 		</div>
 		<nav id="header-nav" aria-label="header-nav">
 			<ul id="menu-top">
@@ -87,7 +89,8 @@ if(isset($inventory_id)) {
 		</nav>
 		<a id="quotes-link" href="https://vk.com/topic-53310491_28269369" target="new">
 		<div id="quotes">
-			<p><script type="text/javascript" language="JavaScript" src="<?php echo url_for(WWW_JS . '/quotes.js'); ?>"></script></p>
+			<!-- <p><script type="text/javascript" language="JavaScript" src="<?php //echo url_for(WWW_JS . '/quotes.js'); ?>"></script></p> -->
+			<p><?php echo $result['text']; ?></p>
 		</div>
 		</a>
 	</div>
@@ -98,15 +101,15 @@ if(isset($inventory_id)) {
 <div id="wrapper-nav">
 	<!-- main navigation -->
 	<nav id="main-nav" aria-label="main-nav">
-		<ul id="menu-main">
-			<li id="equip"><a href="<?php echo WWW_ROOT; ?>">Cнаряжение</a></li>
-			<li id="tent"><a href="<?php echo WWW_ROOT . '/palatki/'; ?>">Палатки</a></li>
-			<li id="sleep"><a href="<?php echo WWW_ROOT . '/spalniki/'; ?>">Спальники</a></li>
-			<li id="mat"><a href="<?php echo WWW_ROOT . '/kovriki/'; ?>">Коврики</a></li>
-			<li id="shelter"><a href="<?php echo WWW_ROOT . '/shatry-i-tenty/'; ?>">Шатры и тенты</a></li>
-			<li id="other"><a href="<?php echo WWW_ROOT . '/poleznie-veshi/'; ?>">Полезные вещи</a></li>
-			<li id="special"><a href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>">Комплекты</a></li>
-			<li id="camping"><a href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Палаточный лагерь</a></li>
+		<ul id="menu-main" itemprop="hasOfferCatalog" itemscope itemtype="https://schema.org/OfferCatalog">
+			<li id="equip" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT; ?>"><span itemprop="name">Cнаряжение</span></a></li>
+			<li id="tent" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/palatki/'; ?>"><span itemprop="name">Палатки</span></a></li>
+			<li id="sleep" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/spalniki/'; ?>"><span itemprop="name">Спальники</span></a></li>
+			<li id="mat" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/kovriki/'; ?>"><span itemprop="name">Коврики</span></a></li>
+			<li id="shelter" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/shatry-i-tenty/'; ?>"><span itemprop="name">Шатры и тенты</span></a></li>
+			<li id="other" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/poleznie-veshi/'; ?>"><span itemprop="name">Полезные вещи</span></a></li>
+			<li id="special" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/pohodnye-komplekty/'; ?>"><span itemprop="name">Комплекты</span></a></li>
+			<li id="camping" itemprop="itemListElement" itemscope itemtype="https://schema.org/OfferCatalog"><a href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>"><span itemprop="name">Палаточный лагерь</span></a></li>
 			<li id="contacts"><a href="<?php echo WWW_ROOT . '/contacts/'; ?>">Контакты</a></li>
 		</ul>	
 		<div id="menu-btn">
@@ -119,7 +122,7 @@ if(isset($inventory_id)) {
 
 	<!-- side navigation -->
 	<nav id="side-nav" aria-label="side-nav" class="">
-	<ul id="menu-mobile">
+		<ul id="menu-mobile">
 			<li><a class="subheader" href="<?php echo WWW_ROOT; ?>/">Снаряжение</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/palatki/'; ?>">Палатки</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/spalniki/'; ?>">Спальники</a></li>

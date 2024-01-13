@@ -3,15 +3,15 @@
 <!-- /content -->
 <footer>
 	<div id="footer-top">
-		<div class="footer-col footer-contacts">
+		<div class="footer-col footer-contacts" itemprop="provider" itemscope itemtype="https://schema.org/Organization" itemref="about">
+			<meta itemprop="name" content="Прокат палаток">
 			<h2>Контактная информация</h2>
 			<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress"><a target="new" href="https://yandex.ru/maps/?um=constructor%3AO9cNFsNT6JOb397YEJD0RC2DffHxj3pj&source=constructorLink"><span itemprop="addressLocality"><?php echo CONTACTS_ADDRESS_CITY; ?></span>,<br><span itemprop="streetAddress"><?php echo CONTACTS_ADDRESS_STREET_KUPCHINO; ?></span></a></p>
-			<p><?php echo CONTACTS_PHONE_KUPCHINO; ?></p><br>
+			<p itemprop="telephone"><?php echo CONTACTS_PHONE_KUPCHINO; ?></p><br>
 			<p><a target="new" href="https://yandex.ru/maps/?um=constructor%3A5b3981a2f61cd625a1fa2e7ae5a749a95dc73eb14e8d35e0d7c8d5194d2f7bae&source=constructorLink"><?php echo CONTACTS_ADDRESS_CITY; ?>,<br><?php echo CONTACTS_ADDRESS_STREET_KUDROVO; ?></a></p>
 			<p><?php echo CONTACTS_PHONE_KUDROVO; ?></p><br>
 			<p><a target="new" href="https://yandex.ru/maps/?um=constructor%3Aec7bde08945c8b772d303db69503610220848afb64416b42bfd63957c246eaa7&source=constructorLink"><?php echo CONTACTS_ADDRESS_CITY; ?>,<br><?php echo CONTACTS_ADDRESS_STREET_KOMEND; ?></a></p>
 			<p><?php echo CONTACTS_PHONE_KOMEND; ?></p>
-			<meta itemprop="openingHours" datetime="We-Mo 9:00−21:00"></meta>
 		</div>
 		<div class="footer-col footer-menu">
 			<h2>Клиентам</h2>
