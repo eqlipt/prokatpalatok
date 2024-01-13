@@ -12,9 +12,9 @@ $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
 
 <!-- center -->
 <section id="center">
-    <article itemscope itemtype="http://schema.org/Product">
+    <article itemscope itemtype="http://schema.org/Offer">
+				<link itemprop="businessFunction" href="http://purl.org/goodrelations/v1#LeaseOut" />
         <h1 itemprop="name"><?php echo $inventory_item['h1']; ?></h1>
-
         <!-- images -->
         <div class="showcase">
             <?php 
@@ -40,7 +40,7 @@ $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
                 <img src="<?php echo $up_arrow_url; ?>"></img>
             </div>
             <div class="accordion-text">
-                <table class="price-table" itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                <table class="price-table" itemprop="priceSpecification" itemtype="http://schema.org/UnitPriceSpecification">
                     <tr>
                     <?php echo (isset($inventory_item['price2'])) ? '
                         <td>
@@ -57,7 +57,8 @@ $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
                         </td>
                         <td>
                         <p>' . h($inventory_item['price2']) . ' ₽</p>
-                        </td>' : 
+                        </td>'
+												:
                         '<td>
                         <p class="bold">первые двое суток</p>
                         </td>
