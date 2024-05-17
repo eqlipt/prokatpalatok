@@ -150,7 +150,9 @@ $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
                 <div class="accordion-header">
                     <div>
                         <h2>' . $article['title'] . '</h2>
-                    </div>' . $up_arrow_url . '</div>
+                    </div>
+										<img src=' . $up_arrow_url . '></img>
+								</div>
                 <div class="accordion-text">' . 
                     $article['text'] . '
                 </div>
