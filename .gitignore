@@ -1,5 +1,7 @@
 sql
 img
 *.jpg
+*.png
+*.webp
 *.psd
 *.bak
