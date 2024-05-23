@@ -180,6 +180,7 @@ div#order-list {
 
 #bottom-part {
   position: relative;
+  min-height: 520px;
 }
 
 textarea {
