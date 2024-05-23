@@ -19,7 +19,7 @@ $up_arrow_url = url_for(WWW_IMG . '/up-arrow.svg');
         <div class="showcase">
             <?php 
 								$inventory_images = array();
-								$filenames = glob('*.{[jJ][pP][gG],[pP][nN][gG],[gG][iI][fF]}', GLOB_BRACE);
+								$filenames = glob('*.{[jJ][pP][gG],[pP][nN][gG],[gG][iI][fF],[wW][eE][bB][pP]}', GLOB_BRACE);
 								foreach($filenames as $filename) {
 									$inventory_images[] = $filename;
 								}
