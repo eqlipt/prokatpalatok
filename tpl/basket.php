@@ -275,7 +275,7 @@ echo  "\r\n" . '💵 Итого: ' . number_format($order['price'], 0, '', ' ') 
 <?php echo  "\r\n" . '----------------------------------------------------------------------------------------------------' . "\r\n"; ?>
 
 <?php if($order['upfront'] != '0') {
-	echo '💵 ';
+	echo '💳 ';
 	echo not_empty($order['customer_name']) ? $order['customer_name'] . ', платёж ' : 'Платёж '; echo number_format(($order['upfront']), 0, '', ' '); echo ' ₽ пришёл, бронь подтверждаем.' . "\n";
 	if($order['upfront'] == $order['price']) {
 		echo 'Заказ оплачен полностью.';
