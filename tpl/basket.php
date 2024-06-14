@@ -282,7 +282,7 @@ echo  "\r\n" . '💵 Итого: ' . number_format($order['price'], 0, '', ' ') 
 		if( $order['customer_returning'] != 1 ) { echo ' При получении потребуется только оставить залог.'; }
 	}
 	else {
-		echo 'К оплате при получении: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.' . "\r\n"; }
+		echo '💵 К оплате при получении: ' . number_format( ( $order['price'] - $order['upfront'] ), 0, '', ' ' ) . ' ₽'; if( $order['customer_returning'] != 1 ) { echo ' + залог.' . "\r\n"; }
 	}
 }
 ?>
