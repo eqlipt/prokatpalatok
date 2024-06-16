@@ -62,7 +62,7 @@ $question = $_GET['question'] ?? '';
             </div>
         </div>
         <div class="card text-block padding-block accordion-item">
-            <input type="checkbox" <?php if($question == 'booking') {echo '';} else {echo 'checked';} ?>>
+            <input type="checkbox" <?php if($question == 'booking' || $question == 'bronirovanie' || $question == 'upfront') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
                     <img class="button" src="<?php echo url_for(WWW_IMG . '/buttons/lock.png'); ?>"/>
