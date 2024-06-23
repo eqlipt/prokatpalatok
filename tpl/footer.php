@@ -18,6 +18,7 @@
 			<p><a href="<?php echo WWW_ROOT . '/usloviya-prokata/'; ?>">Условия проката</a></p>
 			<p><a href="https://vk.com/topic-53310491_28269369">Отзывы</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=payment#section_payment'; ?>">Оплата</a></p>
+			<p><a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=bronirovanie'; ?>">Бронирование</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/dostavka/'; ?>">Доставка</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=discount#section_discount'; ?>">Скидки</a></p>
 			<p><a href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></p>
