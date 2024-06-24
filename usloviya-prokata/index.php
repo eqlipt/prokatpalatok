@@ -45,7 +45,7 @@ $question = $_GET['question'] ?? '';
                 <p>В выходные и праздничные дни минимальный срок проката составляет двое суток.</p>
             </div>
         </div>
-        <div  class="card text-block padding-block accordion-item" id="zalog">
+        <div id="section_zalog" class="card text-block padding-block accordion-item">
             <input type="checkbox" <?php if($question == 'deposit') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>
@@ -61,7 +61,7 @@ $question = $_GET['question'] ?? '';
                 <p>Из документов мы принимаем загранпаспорт, водительские права, военный билет и СТС.</p>
             </div>
         </div>
-        <div class="card text-block padding-block accordion-item">
+        <div id="section_bronirovanie" class="card text-block padding-block accordion-item">
             <input type="checkbox" <?php if($question == 'booking' || $question == 'bronirovanie' || $question == 'upfront') {echo '';} else {echo 'checked';} ?>>
             <div class="accordion-header">
                 <div>

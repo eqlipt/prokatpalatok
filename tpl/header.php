@@ -133,6 +133,7 @@ if(isset($inventory_id)) {
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/palatochny-lager/'; ?>">Палаточный лагерь</a></li>
 			<li><a class="subheader" href="<?php echo WWW_ROOT . '/usloviya-prokata/'; ?>">Условия аренды</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=payment#section_payment'; ?>">Оплата</a></li>
+			<li><a class="submenu" href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=bronirovanie#section_bronirovanie'; ?>">Бронирование</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/dostavka/'; ?>">Доставка</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/usloviya-prokata/?question=discount#section_discount'; ?>">Скидки</a></li>
 			<li><a class="submenu" href="<?php echo WWW_ROOT . '/nashi-preimuschestva/'; ?>">Наши преимущества</a></li>
