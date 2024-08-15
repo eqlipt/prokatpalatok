@@ -6,7 +6,7 @@ session_start();
 define("CORE_PATH", dirname(__FILE__));
 define("PROJECT_PATH", dirname(CORE_PATH));
 define("TPL_PATH", PROJECT_PATH . '/tpl');
-define("WWW_ROOT", '/html/prokat/dev');
+define("WWW_ROOT", '/prokat-dev/prokatpalatok');
 define("WWW_CSS", '/css');
 define("WWW_JS", '/js');
 define("WWW_IMG", '/img');
