@@ -26,10 +26,9 @@ include(TPL_PATH . '/left.php');
 							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_CITY . ', ' . CONTACTS_ADDRESS_STREET_KUPCHINO . '. Перед визитом звоните.'; ?>
 					</p>
 					<p class="sub lighter-yellow" itemprop="telephone">
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KUPCHINO; ?>
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/>
+							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <a href="tel:<?php echo CONTACTS_PHONE_KUPCHINO; ?>"><?php echo CONTACTS_PHONE_KUPCHINO; ?></a>
+							<a href="https://wa.me/<?php echo preg_replace('/[^\d+]/', '', CONTACTS_PHONE_KUPCHINO); ?>"><img class="sign messenger" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/></a>
+							<a href="https://t.me/<?php echo preg_replace('/[^\d+]/', '', CONTACTS_PHONE_KUPCHINO); ?>"><img class="sign messenger" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/></a>
 					</p>
 					<p class="sub lighter-yellow" itemprop="email">
 							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/mailru.png'); ?>"/> E-mail: prokatpalatok@inbox.ru
@@ -47,7 +46,7 @@ include(TPL_PATH . '/left.php');
 							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/location.png'); ?>"/> Адрес: <?php echo CONTACTS_ADDRESS_CITY; ?>, Кудровский проезд 2, гаражный кооператив ПО-11, 4 ряд, секции 36, 37, 38. Сотрудник проката встретит у шлагбаума. Въезд бесплатный.
 					</p>
 					<p class="sub lighter-yellow" itemprop="telephone">
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KUDROVO; ?>
+							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <a href="tel:<?php echo CONTACTS_PHONE_KUDROVO; ?>"><?php echo CONTACTS_PHONE_KUDROVO; ?></a>
 							<!-- <img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
 							<img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
 							<img class="sign" src="<?php //echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/> -->
@@ -69,9 +68,8 @@ include(TPL_PATH . '/left.php');
 					</p>
 					<p class="sub lighter-yellow" itemprop="telephone">
 							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/phonecall.png'); ?>"/> Тел.: <?php echo CONTACTS_PHONE_KOMEND; ?>
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/>
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/viber.png'); ?>"/>
-							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/>
+							<a href="https://wa.me/<?php echo preg_replace('/[^\d+]/', '', CONTACTS_PHONE_KOMEND); ?>"><img class="sign messenger" src="<?php echo url_for(WWW_IMG . '/buttons/whatsapp.png'); ?>"/></a>
+							<a href="https://t.me/<?php echo preg_replace('/[^\d+]/', '', CONTACTS_PHONE_KOMEND); ?>"><img class="sign messenger" src="<?php echo url_for(WWW_IMG . '/buttons/telegram.png'); ?>"/></a>
 					</p>
 					<p class="sub lighter-yellow">
 							<img class="sign" src="<?php echo url_for(WWW_IMG . '/buttons/hours.png'); ?>"/> Режим работы: по договорённости, обязательно звоните!
