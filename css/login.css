@@ -1,0 +1,21 @@
+.form__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.form__wrapper input {
+    padding: 4px;
+}
+.form__wrapper a {
+    text-decoration: none;
+    font: 400 13px Arial;
+    padding: 4px 10px;
+    margin-inline: auto;
+    width: 50px;
+    color: #000;
+    background: #efefef;
+    border: 1px solid #777;
+    border-radius: 2px;
+    text-align: center;
+}

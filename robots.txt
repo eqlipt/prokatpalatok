@@ -1,0 +1,14 @@
+User-agent: *
+Disallow: /admin
+Disallow: /core
+Disallow: /css
+Disallow: /img
+Disallow: /js
+Disallow: /tpl
+Disallow: /yandex_f16dad0cdba967e1.html
+Disallow: /*?
+Disallow: /data.txt
+Disallow: /vk-posts.php
+Disallow: /vk-reviews.php
+
+Sitemap: https://prokatpalatok.ru/sitemap.xml

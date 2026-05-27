@@ -1,0 +1,118 @@
+/* INVENTORY PAGE */
+#content.inventory {
+  max-width: 930px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+}
+#content.inventory #breadcrumbs {
+  grid-column-end: 3;
+}
+#content.inventory h1 {
+  text-transform: uppercase;
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.inventory-item {
+  min-width: 230px;
+  display: flex;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 11px rgba(0, 0, 0, 0.5);
+}
+.inventory-item img {
+  aspect-ratio: 450 / 391;
+  width: 195px;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.inventory-item img:active {
+  transform: scale(0.995);
+}
+
+.inventory-item div {
+  min-width: 200px;
+  width: 240px;
+  padding: 10px 0 10px 15px;
+}
+.inventory-item div h2 {
+  line-height: 22px;
+  color: var(--light-yellow);
+  text-transform: uppercase;
+}
+.inventory-item div p {
+  line-height: 20px;
+  color: var(--light-yellow);
+}
+.inventory-item div p.brief {
+  padding-top: 6px;
+  color: #fafafa;
+}
+.inventory-item div p.badge {
+  padding-top: 6px;
+  color: var(--yellow);
+  font-weight: bold;
+}
+.inventory-item div > p.price {
+  padding-top: 6px;
+}
+.inventory-item div > p.price ~ p.price {
+  padding-top: 0;
+}
+
+@media (max-width: 1020px) {
+  #content.inventory {
+    grid-column-gap: 70px;
+    width: 580px;
+  }
+  .inventory-item {
+    flex-direction: column;
+  }
+  .inventory-item img {
+    width: 100%;
+    border-bottom-left-radius: initial;
+    border-top-right-radius: 5px;
+  }
+  .inventory-item div {
+    width: 100%;
+  }
+}
+@media (max-width: 660px) {
+  #content.inventory {
+    display: block;
+    margin: 0 auto;
+    width: 435px;
+  }
+  .inventory h1 {
+    margin-bottom: 15px;
+  }
+  .inventory-item {
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+  .inventory-item img {
+    width: 195px;
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: initial;
+  }
+  .inventory-item div {
+    width: 240px;
+  }
+}
+@media (max-width: 510px) {
+  #content.inventory {
+    width: 80%;
+  }
+  .inventory-item {
+    flex-direction: column;
+  }
+  .inventory-item img {
+    width: 100%;
+    border-bottom-left-radius: initial;
+    border-top-right-radius: 5px;
+  }
+  .inventory-item div {
+    width: 100%;
+  }
+}
